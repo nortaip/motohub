@@ -1007,6 +1007,29 @@ h3 {
   margin: 0;
 }
 
+.bold-24 {
+  font-family: 'TT Firs Neue';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1C1C1E;
+}
+
+.bold-32 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 29px;
+}
+
+.regular-24 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+}
+
 h4 {
   font-weight: 500;
   font-size: 24px;
@@ -1077,20 +1100,18 @@ header .logo {
 }
 
 button {
-  align-items: center;
   text-align: center;
-  padding: 14px 14px;
   border-radius: 13px;
-  gap: 10px;
   border: none;
   cursor: pointer;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 12px 16px;
   gap: 10px;
   font-size: 16px;
+  width: calc(100%);
 }
 
 .search-container {
@@ -1216,6 +1237,7 @@ button[type='submit'] {
   background: transparent url('./img/search.png') no-repeat center;
   cursor: pointer;
   opacity: 0.7;
+
 }
 
 button[type='submit']:hover {
@@ -1302,7 +1324,7 @@ a {
 select {
   padding: 12px 16px;
   gap: 10px;
-  width: calc(100% - 20px);
+  width: calc(100%);
   cursor: pointer;
   /* Color Swatch */
 
@@ -1373,6 +1395,7 @@ select {
   padding: 12px 16px;
   background: #da291c;
   border-radius: 13px;
+  width: calc(100%);
   color: var(--text-color);
 }
 
@@ -1477,7 +1500,6 @@ select {
 }
 
 .img-card {
-  background: url(./img/motors/rectangle\17jpg), #f2f2f7;
   border-radius: 13px;
 }
 
@@ -1579,9 +1601,19 @@ footer a {
 .tz-gapb {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: flex-start;
   margin: 0 36px 0 0;
   gap: 24px;
+}
+
+.tz-gapbt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 36px 0 0;
+  gap: 36px;
 }
 
 .tz-hels {
@@ -1617,6 +1649,7 @@ section {
   align-items: center;
   padding: 24px;
   gap: 24px;
+  width: 966px;
   background: #DA291C;
   border-radius: 23px;
   color: var(--text-color);
@@ -1628,14 +1661,33 @@ section {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+  gap: 8px;
+}
+
+.tz-textds {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+}
+
+.tz-tfdg {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
 }
 
 .tz-icons {
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   padding: 24px;
-  gap: 8px;
+  gap: 27px;
   background: #1C1C1E;
   border-radius: 23px;
   flex: none;
@@ -1657,7 +1709,6 @@ section {
   flex-direction: row;
   align-items: flex-start;
   gap: 24px;
-  max-width: 1200px;
   color: var(--main-black-color);
 }
 
@@ -1692,7 +1743,6 @@ img {
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
-  margin: 0;
 }
 
 .descc {
@@ -1703,4 +1753,23 @@ img {
   padding: 0px;
   gap: 134px;
 
+}
+
+.tz-filterdsd {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 14px;
+}
+
+.tz-cmfgu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  width: calc(100%);
+  background: #F2F2F7;
+  border-radius: 23px;
 }
