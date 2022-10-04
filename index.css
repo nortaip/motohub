@@ -1649,7 +1649,7 @@ section {
   align-items: center;
   padding: 24px;
   gap: 24px;
-  width: 966px;
+  width: 100%;
   background: #DA291C;
   border-radius: 23px;
   color: var(--text-color);
@@ -1772,4 +1772,20 @@ img {
   width: calc(100%);
   background: #F2F2F7;
   border-radius: 23px;
+}
+
+.tz-imgmt {
+  position: relative;
+  left: -1px;
+
+}
+
+.tz-dfe {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  background-color: #1c1c1e;
+  background-image: url("./img/favicon.png");
+  background-repeat: no-repeat;
 }
