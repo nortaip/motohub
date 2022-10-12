@@ -778,7 +778,7 @@ body {
   .col-lg-10,
   .col-lg-11,
   .col-lg-12 {
-    float: left;
+    float:center;
   }
 
   .col-lg-12 {
@@ -1114,7 +1114,7 @@ button {
   width: calc(100%);
 }
 
-@media (min-width: 1400px) {
+
   .frame_1294_542_11027 {
     visibility: hidden;
   }
@@ -1504,6 +1504,7 @@ button {
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
+    border:none;
   }
 
   .img-card {
@@ -1876,7 +1877,7 @@ button {
     letter-spacing: 0;
     line-height: px;
   }
-}
+
 
 @media (min-width:1100px) {
 
@@ -2253,4 +2254,463 @@ button {
     line-height: px;
   }
 
+}
+
+.frame542_9273 { 
+	overflow:hidden;
+}
+.frame_1294_542_9273 { 
+	width:1296px;
+	height:308px;
+	position:absolute;
+}
+.cta_661_13410 { 
+	background-color:rgba(218.00000220537186, 41.00000135600567, 28.000000230968, 1);
+	width:966px;
+	height:308px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:23px;
+	border-top-right-radius:23px;
+	border-bottom-left-radius:23px;
+	border-bottom-right-radius:23px;
+}
+.frame_1147_661_13411 { 
+	width:279px;
+	height:260px;
+	position:absolute;
+	left:24px;
+	top:24px;
+}
+.frame_1146_661_13412 { 
+	width:279px;
+	height:143px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.motohub________________________________________________661_13413 { 
+	color:rgba(255, 255, 255, 1);
+	width:279px;
+	height:87px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:TT Firs Neue;
+	text-align:left;
+	font-size:24px;
+	letter-spacing:0;
+	line-height:px;
+}
+.___________________________________________________661_13414 { 
+	color:rgba(255, 255, 255, 1);
+	width:278px;
+	height:48px;
+	position:absolute;
+	left:0px;
+	top:95px;
+	font-family:TT Firs Neue;
+	text-align:left;
+	font-size:16px;
+	letter-spacing:0;
+	line-height:px;
+}
+.frame_1_661_13415 { 
+	width:252.84495544433594px;
+	height:85.00283813476562px;
+	position:absolute;
+	left:0px;
+	top:174.99716186523438px;
+}
+.frame_6_661_13416 { 
+	width:252.84495544433594px;
+	height:38.50141906738281px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.frame_1304_661_13600 { 
+	background-color:rgba(255, 255, 255, 1);
+	width:115.50425720214844px;
+	height:38.50141525268555px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.frame_1305_661_13602 { 
+	background-color:rgba(255, 255, 255, 1);
+	width:129.3406982421875px;
+	height:38.50141906738281px;
+	position:absolute;
+	left:123.50425720214844px;
+	top:0px;
+}
+.frame_1306_661_13604 { 
+	background-color:rgba(255, 255, 255, 1);
+	width:128.73912048339844px;
+	height:38.50141906738281px;
+	position:absolute;
+	left:0px;
+	top:46.5013427734375px;
+}
+.frame_1148_661_13420 { 
+	width:564.2000122070312px;
+	height:260px;
+	position:absolute;
+	left:377.79998779296875px;
+	top:24px;
+}
+.image_6_661_13421 { 
+	width:260px;
+	height:260px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	background-image:url(./img/image 6.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.image_7_661_13422 { 
+	width:260px;
+	height:260px;
+	position:absolute;
+	left:101.39990234375px;
+	top:-1.1368683772161603e-13px;
+	background-image:url(images/image_7.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.image_8_661_13423 { 
+	width:260px;
+	height:260px;
+	position:absolute;
+	left:202.7998046875px;
+	top:-1.1368683772161603e-13px;
+	background-image:url(images/image_8.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.image_9_661_13424 { 
+	width:260px;
+	height:260px;
+	position:absolute;
+	left:304.2001953125px;
+	top:-1.1368683772161603e-13px;
+	background-image:url(images/image_9.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.cta_542_9275 { 
+	background-color:rgba(28.000000230968, 28.000000230968, 30.00000011175871, 1);
+	width:306px;
+	height:308px;
+	position:absolute;
+	left:990px;
+	top:0px;
+	border-top-left-radius:23px;
+	border-top-right-radius:23px;
+	border-bottom-left-radius:23px;
+	border-bottom-right-radius:23px;
+}
+.frame_1146_i542_9275_542_11117 { 
+	width:258px;
+	height:57px;
+	position:absolute;
+	left:24px;
+	top:24px;
+}
+.______________i542_9275_542_11118 { 
+	color:rgba(255, 255, 255, 1);
+	width:258px;
+	height:29px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:TT Firs Neue;
+	text-align:left;
+	font-size:24px;
+	letter-spacing:0;
+	line-height:px;
+}
+.____________________i542_9275_542_11119 { 
+	color:rgba(255, 255, 255, 1);
+	width:258px;
+	height:24px;
+	position:absolute;
+	left:0px;
+	top:33px;
+	font-family:TT Firs Neue;
+	text-align:left;
+	font-size:16px;
+	letter-spacing:0;
+	line-height:px;
+}
+.frame_1254_i542_9275_542_11120 { 
+	width:131.2957305908203px;
+	height:179px;
+	position:absolute;
+	left:24px;
+	top:105px;
+}
+.frame_1250_i542_9275_542_11121 { 
+	width:127.02235412597656px;
+	height:44.93191146850586px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.facebook_i542_9275_542_11122 { 
+	width:44.02235794067383px;
+	height:44.93191146850586px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.facebookoctdenoiserbeauty_001_copy_i542_9275_542_11122_542_9103 { 
+	width:44.02235794067383px;
+	height:44.93191146850586px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	background-image:url(images/facebookoctdenoiserbeauty_001_copy.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.facebook_i542_9275_542_11123 { 
+	color:rgba(255, 255, 255, 1);
+	width:75px;
+	height:24px;
+	position:absolute;
+	left:52.02235794067383px;
+	top:10.46595573425293px;
+	font-family:TT Firs Neue;
+	text-align:left;
+	font-size:16px;
+	letter-spacing:0;
+	line-height:px;
+}
+.frame_1251_i542_9275_542_11124 { 
+	width:131.2957305908203px;
+	height:44.93191146850586px;
+	position:absolute;
+	left:0px;
+	top:44.93191146850586px;
+}
+.instagram_i542_9275_542_11125 { 
+	width:45.29573440551758px;
+	height:44.93191146850586px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.instagramoctdenoiserbeauty_001_copy_i542_9275_542_11125_542_9105 { 
+	width:45.29573440551758px;
+	height:44.93191146850586px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	background-image:url(images/instagramoctdenoiserbeauty_001_copy.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.instagram_i542_9275_542_11126 { 
+	color:rgba(255, 255, 255, 1);
+	width:78px;
+	height:24px;
+	position:absolute;
+	left:53.29573440551758px;
+	top:10.46595573425293px;
+	font-family:TT Firs Neue;
+	text-align:left;
+	font-size:16px;
+	letter-spacing:0;
+	line-height:px;
+}
+.frame_1252_i542_9275_542_11127 { 
+	width:118.38618469238281px;
+	height:44.38618087768555px;
+	position:absolute;
+	left:0px;
+	top:89.86382293701172px;
+}
+.youtube_i542_9275_542_11128 { 
+	width:44.38618087768555px;
+	height:44.38618087768555px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.youtubeoctdenoiserbeauty_001_copy_i542_9275_542_11128_542_9107 { 
+	width:44.38618087768555px;
+	height:44.38618087768555px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	background-image:url(images/youtubeoctdenoiserbeauty_001_copy.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.youtube_i542_9275_542_11129 { 
+	color:rgba(255, 255, 255, 1);
+	width:66px;
+	height:24px;
+	position:absolute;
+	left:52.38618087768555px;
+	top:10.193090438842773px;
+	font-family:TT Firs Neue;
+	text-align:left;
+	font-size:16px;
+	letter-spacing:0;
+	line-height:px;
+}
+.frame_1253_i542_9275_542_11130 { 
+	width:102.11382293701172px;
+	height:44.75px;
+	position:absolute;
+	left:0px;
+	top:134.25px;
+}
+.tiktok_i542_9275_542_11131 { 
+	width:45.11382293701172px;
+	height:44.75px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.tiktok_octdenoiserbeauty_001_copy_i542_9275_542_11131_542_9109 { 
+	width:45.11382293701172px;
+	height:44.75px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	background-image:url(images/tiktok_octdenoiserbeauty_001_copy.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.tiktok_i542_9275_542_11132 { 
+	color:rgba(255, 255, 255, 1);
+	width:49px;
+	height:24px;
+	position:absolute;
+	left:53.11382293701172px;
+	top:10.375px;
+	font-family:TT Firs Neue;
+	text-align:left;
+	font-size:16px;
+	letter-spacing:0;
+	line-height:px;
+}
+
+
+.frame542_9217 { 
+	overflow:hidden;
+}
+.frame_1142_542_9217 { 
+	width:305px;
+	height:292.0000305175781px;
+	position:absolute;
+}
+.frame542_9218 { 
+	color:rgba(218.00000220537186, 41.00000135600567, 28.000000230968, 1);
+	width:305px;
+	height:39px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:TT Firs Neue;
+	text-align:left;
+	font-size:32px;
+	letter-spacing:0;
+	line-height:px;
+}
+.frame_1143_542_9219 { 
+	width:305px;
+	height:217.00003051757812px;
+	position:absolute;
+	left:0px;
+	top:75px;
+}
+.frame_1141_542_9220 { 
+	width:305px;
+	height:140px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.frame542_9221 { 
+	color:rgba(28.000000230968, 28.000000230968, 30.00000011175871, 1);
+	width:131px;
+	height:29px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:TT Firs Neue;
+	text-align:left;
+	font-size:24px;
+	letter-spacing:0;
+	line-height:px;
+}
+.frame542_9222 { 
+	color:rgba(28.000000230968, 28.000000230968, 30.00000011175871, 1);
+	width:100px;
+	height:29px;
+	position:absolute;
+	left:0px;
+	top:37px;
+	font-family:TT Firs Neue;
+	text-align:left;
+	font-size:24px;
+	letter-spacing:0;
+	line-height:px;
+}
+.frame542_9223 { 
+	color:rgba(28.000000230968, 28.000000230968, 30.00000011175871, 1);
+	width:183px;
+	height:29px;
+	position:absolute;
+	left:0px;
+	top:74px;
+	font-family:TT Firs Neue;
+	text-align:left;
+	font-size:24px;
+	letter-spacing:0;
+	line-height:px;
+}
+.frame542_9224 { 
+	color:rgba(28.000000230968, 28.000000230968, 30.00000011175871, 1);
+	width:128px;
+	height:29px;
+	position:absolute;
+	left:0px;
+	top:111px;
+	font-family:TT Firs Neue;
+	text-align:left;
+	font-size:24px;
+	letter-spacing:0;
+	line-height:px;
+}
+.line_1_542_9225 { 
+	transform: rotate(0.000005008956130975318deg);
+	width:305px;
+	height:0px;
+	position:absolute;
+	left:0px;
+	top:164px;
+}
+.frame542_9225 { 
+	border:2px solid rgba(229.00000154972076, 229.00000154972076, 234.00000125169754, 1);
+}
+.frame542_9226 { 
+	color:rgba(0, 122.00000032782555, 255, 1);
+	width:305px;
+	height:29px;
+	position:absolute;
+	left:0px;
+	top:188.00001525878906px;
+	font-family:TT Firs Neue;
+	text-align:left;
+	font-size:24px;
+	letter-spacing:0;
+	line-height:px;
 }
