@@ -1,0 +1,7 @@
+{
+  "name": "motohub",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
