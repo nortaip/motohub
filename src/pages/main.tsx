@@ -1,6 +1,7 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonRefresher, IonRefresherContent, RefresherEventDetail } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
-import Tab from '../components/menu';
+import { IonContent, IonPage, IonToolbar, IonTitle, IonRefresher, IonRefresherContent, RefresherEventDetail, IonButtons, IonMenuButton } from '@ionic/react';
+import Card from '../components/card';
+import Headermain from '../components/Headermain';
+import Catagory from '../components/Catagory';
 
 function handleRefresh(event: CustomEvent<RefresherEventDetail>) {
   setTimeout(() => {
@@ -12,17 +13,14 @@ function handleRefresh(event: CustomEvent<RefresherEventDetail>) {
 const main: React.FC = () => {
   return (
     <IonPage>
-      <Tab />
       <IonContent fullscreen>
         <IonRefresher slot="fixed" onIonRefresh={handleRefresh}>
-          <IonRefresherContent></IonRefresherContent>
+          <IonRefresherContent>
+          </IonRefresherContent>
         </IonRefresher>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">main</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer name="main page" />
+        <Headermain />
+        <Catagory />
+        <Card />
       </IonContent>
     </IonPage>
   );

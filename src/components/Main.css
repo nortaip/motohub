@@ -1,0 +1,94 @@
+:root {
+  /* fonts */
+  --font-montserrat: Montserrat;
+  --medium-title: Montserrat;
+  --h2-bold: Montserrat;
+}
+
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+small {
+  font-family: 'TT Firs Neue';
+  font-style: normal;
+}
+
+h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 32px;
+}
+
+h4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.container {
+  --text-align: center;
+  --position: absolute;
+  --left: 0;
+  --right: 0;
+  --top: 50%;
+  --transform: translateY(-50%);
+}
+
+.container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.container p {
+  --font-size: 16px;
+  --line-height: 22px;
+  --color: #8c8c8c;
+  --margin: 0;
+}
+
+.container a {
+  --text-decoration: none;
+}
+
+/* iOS places the subtitle above the title */
+ion-card-header.ios {
+  --flex-flow: column-reverse;
+}
+
+.header {
+  position: relative;
+  height: 171px;
+  left: 0%;
+  right: 0%;
+  top: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  --background: #DA291C;
+}
+
+.IonGrid {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  width: 358px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+IonCard{
+  background-color: transparent;
+  box-shadow: none;
+}

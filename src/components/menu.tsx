@@ -1,15 +1,14 @@
 import React from 'react';
 import {
     IonButtons,
-    IonContent,
     IonHeader,
-    IonMenu,
     IonMenuButton,
-    IonPage,
     IonTitle,
+    IonBackButton,
     IonToolbar
 
 } from '@ionic/react';
+
 function Menu() {
     return (
         <>
@@ -18,7 +17,12 @@ function Menu() {
                     <IonButtons slot="start">
                         <IonMenuButton></IonMenuButton>
                     </IonButtons>
-                    <IonTitle>Menu</IonTitle>
+                    <IonToolbar>
+                        <IonButtons slot="start">
+                            <IonBackButton defaultHref="#"></IonBackButton>
+                        </IonButtons>
+                        <IonTitle>Back Button</IonTitle>
+                    </IonToolbar>
                 </IonToolbar>
             </IonHeader>
         </>
