@@ -11,7 +11,7 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { search, add, home, addCircle, heartOutline, personOutline } from 'ionicons/icons';
+import { search, home, addCircle, heartOutline, personOutline } from 'ionicons/icons';
 import Main from './pages/main';
 import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';

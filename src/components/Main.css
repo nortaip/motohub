@@ -45,7 +45,7 @@ h6 {
 }
 
 .wh {
-  color: var(--ion-color-text-light);
+  color: var(--ion-color-light-black);
 }
 
 .container {
@@ -139,6 +139,8 @@ ion-card-header.ios {
   align-items: flex-start;
   padding: 0px;
   padding: 0px 16px;
+  z-index: 1;
+  background-color: transparent;
 }
 
 .Crardlabel {
@@ -155,7 +157,7 @@ ion-card-header.ios {
   flex-direction: column;
   align-items: flex-start;
   padding: 0px 5px;
-  /* gap: 4px; */
+  gap: 4px;
   align-content: flex-start;
   justify-content: space-around;
 }
@@ -165,6 +167,8 @@ ion-card-header.ios {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
+  padding: 0;
+  margin: 0;
   color: var(--ion-color-light-black);
 }
 
@@ -174,6 +178,8 @@ ion-card-header.ios {
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
+  padding: 0;
+  margin: 0;
   color: var(--ion-color-light-black);
 }
 
@@ -183,12 +189,15 @@ ion-card-header.ios {
   font-weight: 400;
   font-size: 13px;
   line-height: 17px;
+  padding: 0;
+  margin: 0;
   color: var(--ion-color-light-black);
 }
 
 .img-card {
   width: 100%;
-  height: 128px;
+  height: 158px;
+  border-radius: 10px;
 }
 
 .products {
@@ -200,6 +209,7 @@ ion-card-header.ios {
   align-content: center;
   justify-content: flex-start;
   padding: 0px 16px;
+  z-index: 1;
 }
 
 .main-content {
@@ -209,4 +219,125 @@ ion-card-header.ios {
   align-items: center;
   padding: 0px;
   gap: 21px;
+  background-color: transparent;
+}
+
+.rectangleView {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0%;
+  left: 0%;
+  background-color: #da291c;
+  height: 171px;
+  z-index: -1;
+}
+
+.card-group {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+}
+
+.badge {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  /* gap: 71px; */
+  position: absolute;
+  width: 193px;
+  height: 21px;
+  left: calc(50% - 150px/2 + -20.5px);
+  top: 10px;
+  background-color: transparent;
+}
+
+.like {
+  width: 20px;
+  height: 20px;
+  color: var(--ion-color-text-light);
+}
+
+.badge-pr {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 2px 8px;
+  gap: 10px;
+  /* width: 70px; */
+  height: 21px;
+
+  /* Color */
+  background: var(--ion-color-light-red);
+  border-radius: 16px;
+  font-family: 'TT Firs Neue';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
+  /* identical to box height */
+
+  /* Color Swatch */
+
+  color: var(--ion-color-text-light)
+}
+
+.badge-new {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 2px 8px;
+  gap: 10px;
+  /* width: 70px; */
+  height: 21px;
+
+  /* Color */
+  background: var(--ion-color-ligt-green);
+  border-radius: 16px;
+  font-family: 'TT Firs Neue';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
+  /* identical to box height */
+
+  /* Color Swatch */
+
+  color: var(--ion-color-text-light)
+}
+
+.badge-end {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 2px 8px;
+  gap: 10px;
+  /* width: 70px; */
+  height: 21px;
+
+  /* Color */
+  background: var(--ion-color-border);
+  border-radius: 16px;
+  font-family: 'TT Firs Neue';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
+  /* identical to box height */
+
+  /* Color Swatch */
+
+  color: var(--ion-color-text-light)
+}
+
+.dd {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
 }

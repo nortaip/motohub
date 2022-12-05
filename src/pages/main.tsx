@@ -2,7 +2,7 @@ import { IonContent, IonPage, IonItem, IonRefresher, IonRefresherContent, Refres
 import Card from '../components/card';
 import Headermain from '../components/Headermain';
 import Catagory from '../components/Catagory';
-
+import '../components/Main.css'
 function handleRefresh(event: CustomEvent<RefresherEventDetail>) {
   setTimeout(() => {
     // Any calls to load data go here
@@ -13,6 +13,7 @@ function handleRefresh(event: CustomEvent<RefresherEventDetail>) {
 const main: React.FC = () => {
   return (
     <IonPage>
+      
       <IonContent fullscreen className='container'>
         <IonRefresher slot="fixed" onIonRefresh={handleRefresh}>
           <IonRefresherContent>
