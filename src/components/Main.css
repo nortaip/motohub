@@ -246,12 +246,12 @@ ion-card-header.ios {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0px;
+  padding: 10px;
   /* gap: 71px; */
   position: absolute;
-  width: 193px;
+  width: 100%;
   height: 21px;
-  left: calc(50% - 150px/2 + -20.5px);
+  /* left: calc(50% - 150px/2 + -20.5px); */
   top: 10px;
   background-color: transparent;
 }
