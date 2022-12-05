@@ -1,4 +1,3 @@
-
 import {
     IonMenu,
     IonItem,
@@ -6,13 +5,15 @@ import {
     IonList,
     IonIcon,
     IonToggle,
+    IonContent
 } from '@ionic/react';
 import { helpCircleOutline, helpBuoyOutline, moon, shieldOutline, documentTextOutline, chevronForwardOutline, notificationsOutline, languageOutline, personCircleOutline, lockClosedOutline, keyOutline } from 'ionicons/icons';
-function Menu() {
+
+function Profilesettings() {
     const toggleDarkModeHandler = () => document.body.classList.toggle('dark');
 
     return (
-        <>
+        <><IonContent>
             <IonList inset={true}>
                 <IonItem className='list'>
                     <IonIcon className='user-icon' icon={personCircleOutline} />
@@ -73,13 +74,14 @@ function Menu() {
             </IonList>
             <IonList inset={true}>
                 <IonItem className='list'>
-                    <IonLabel className='user-p'>Выйти из аккаунта</IonLabel>
+                    <IonLabel className='user-p out'><h5>Выйти из аккаунта</h5></IonLabel>
                 </IonItem>
                 <IonItem className='list'>
-                    <IonLabel className='user-p'>Версия приложения 1.0</IonLabel>
+                    <IonLabel className='user-p version'><h6>Версия приложения 1.0</h6></IonLabel>
                 </IonItem>
             </IonList>
+        </IonContent>
         </>
     );
 }
-export default Menu;
+export default Profilesettings;

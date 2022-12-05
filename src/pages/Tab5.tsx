@@ -9,20 +9,19 @@ import {
 } from '@ionic/react';
 import Profilesettings from '../components/profilesettings';
 import '../components/Main.css';
-
+import UserInfo from '../components/usercard';
 const Tab5: React.FC = () => {
   return (
     <IonPage>
-      <IonHeader>
 
-        <IonToolbar>
-          <IonTitle>Мой профиль</IonTitle>
-        </IonToolbar>
-      </IonHeader>
       <IonContent>
+        <div className='user-main'>
+          <UserInfo />
+          <img alt='pp' className='pp' src='/assets/images/profimg.jpg' />
+        </div>
         <IonHeader collapse="condense">
-          <IonToolbar><div ></div>
-            <IonTitle className='bg-red'size="large">Мой профиль</IonTitle>
+          <IonToolbar>
+            <IonTitle className='bg-red' size="large">Мой профиль</IonTitle>
           </IonToolbar>
         </IonHeader>
         <Profilesettings />
