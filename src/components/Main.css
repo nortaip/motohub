@@ -12,6 +12,7 @@ body {
   line-height: normal;
 }
 
+p,
 h1,
 h2,
 h3,
@@ -20,7 +21,7 @@ h5,
 h6,
 small {
   font-family: 'TT Firs Neue' !important;
-  font-style: normal !important;
+  /* font-style: normal !important; */
 }
 
 h3 {
@@ -44,8 +45,23 @@ h6 {
   line-height: 17px !important;
 }
 
+ion-header {
+  display: block;
+  position: relative;
+  -ms-flex-order: -1;
+  order: -1;
+  width: 100%;
+  z-index: 0;
+}
+
 .wh {
+  color: var(--ion-color-text-light2);
+}
+
+.whh {
   color: var(--ion-color-light-black);
+  margin-top: 10px !important;
+  margin-bottom: 1px !important;
 }
 
 .container {
@@ -54,7 +70,7 @@ h6 {
   left: 0;
   right: 0;
   top: 50%;
-  transform: translateY(-50%);
+  /* transform: translateY(-50%); */
 }
 
 .container strong {
@@ -84,6 +100,33 @@ ion-card-header.ios {
   justify-content: space-between;
   align-items: flex-start;
   padding: 0px;
+  gap: 5px;
+}
+
+.header-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  gap: 179px;
+  flex-wrap: nowrap;
+  align-content: center;
+  background-color: var(--ion-color-light-red);
+}
+
+.toolbar-background {
+  inset: 0px;
+  position: absolute;
+  transform: translateZ(0px);
+  border-width: var(--border-width);
+  border-style: var(--border-style);
+  border-color: var(--border-color);
+  background: var(--ion-color-light-red) !important;
+  contain: strict;
+  opacity: calc(var(--opacity) * var(--opacity-scale));
+  z-index: -1;
+  pointer-events: none;
 }
 
 .header {
@@ -121,7 +164,9 @@ ion-card-header.ios {
 }
 
 .svg {
-  color: var(--ion-color-text-light);
+  width: 37px;
+  height: 37px;
+  color: #da291c !important;
 }
 
 .cat {
@@ -130,15 +175,15 @@ ion-card-header.ios {
   justify-content: space-between;
   align-items: center;
   padding: 0px;
-  gap: 8px;
+  /* gap: 8px; */
 }
 
 .catagory {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
-  padding: 0px 16px;
+  /* padding: 0px; */
+  /* padding: 0px 16px; */
   z-index: 1;
   background-color: transparent;
 }
@@ -196,7 +241,7 @@ ion-card-header.ios {
 
 .img-card {
   width: 100%;
-  height: 158px;
+  height: 100%;
   border-radius: 10px;
 }
 
@@ -208,7 +253,7 @@ ion-card-header.ios {
   flex-wrap: nowrap;
   align-content: center;
   justify-content: flex-start;
-  padding: 0px 16px;
+  /* padding: 0px 16px; */
   z-index: 1;
 }
 
@@ -340,4 +385,72 @@ ion-card-header.ios {
   align-items: flex-start;
   padding: 0px;
   gap: 16px;
+}
+
+.menu-icon {
+  font-size: 24px;
+  padding: 10px;
+  color: var(--ion-color-text-light);
+}
+
+.bg-red {
+  position: absolute;
+  height: 130px;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 80.59%;
+  background: var(--ion-color-light-red);
+}
+
+/* user */
+
+.user-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 0px;
+  margin-top: 20px !important;
+  margin: 0 auto;
+  width: 280px;
+  /* height: 132px; */
+  background: #F3F3F3;
+  box-shadow: 0px 0px 0.5px rgb(66 71 76 / 32%), 0px 0px 8px rgb(66 71 76 / 5%);
+  border-radius: 23px;
+  align-content: center;
+}
+
+
+.user-badge {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2px 8px;
+  gap: 10px;
+  border-radius: 16px;
+  align-content: center;
+  justify-content: center;
+  width: max-content;
+  background: #007AFF;
+  border-radius: 16px;
+}
+
+.user-icon {
+  font-size: 22px !important;
+}
+
+.user-p {
+  font-family: 'TT Firs Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--ion-color-light-black) !important;
+  padding-left: 8px;
+}
+
+.list{
+  color: var(--ion-color-light-back);
 }

@@ -1,30 +1,22 @@
 import React from 'react';
 import {
-    IonButtons,
-    IonHeader,
-    IonMenuButton,
-    IonTitle,
-    IonBackButton,
-    IonToolbar
+    IonMenu,
 
 } from '@ionic/react';
+import Profilesettings from './profilesettings'
 
 function Menu() {
+    
     return (
         <>
-            <IonHeader>
-                <IonToolbar>
-                    <IonButtons slot="start">
-                        <IonMenuButton></IonMenuButton>
-                    </IonButtons>
-                    <IonToolbar>
-                        <IonButtons slot="start">
-                            <IonBackButton defaultHref="#"></IonBackButton>
-                        </IonButtons>
-                        <IonTitle>Back Button</IonTitle>
-                    </IonToolbar>
-                </IonToolbar>
-            </IonHeader>
+            <IonMenu contentId="main-content">
+                <div className='user-main'>
+                    <h4 className='whh'>Мамед Мамедов</h4>
+                    <h5 className='whh'>Просто хороший парень</h5>
+                    <p className='user-badge'>проверенный</p>
+                </div>
+                <Profilesettings/>
+            </IonMenu>
         </>
     );
 }

@@ -5,43 +5,27 @@ import {
   IonPage,
   IonTitle,
   IonToolbar,
-  IonList,
-  IonItem,
-  IonIcon,
-  IonLabel,
-  IonToggle,
-} from '@ionic/react';
 
+} from '@ionic/react';
+import Profilesettings from '../components/profilesettings';
 import '../components/Main.css';
-import { moon } from 'ionicons/icons';
 
 const Tab5: React.FC = () => {
-  const toggleDarkModeHandler = () => document.body.classList.toggle('dark');
-
   return (
     <IonPage>
       <IonHeader>
+
         <IonToolbar>
-          <IonTitle>Tab 1</IonTitle>
+          <IonTitle>Мой профиль</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent>
         <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Tab 1</IonTitle>
+          <IonToolbar><div ></div>
+            <IonTitle className='bg-red'size="large">Мой профиль</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <IonList>
-          <IonItem lines="none">
-            <IonIcon slot="start" icon={moon} />
-            <IonLabel>Dark Mode</IonLabel>
-            <IonToggle
-              slot="end"
-              name="darkMode"
-              onIonChange={toggleDarkModeHandler}
-            />
-          </IonItem>
-        </IonList>
+        <Profilesettings />
       </IonContent>
     </IonPage>
   );

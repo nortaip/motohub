@@ -1,5 +1,5 @@
 import { Redirect, Route } from 'react-router-dom';
-import Icon from 'react-native-ionicons'
+// import Icon from 'react-native-ionicons'
 import {
   IonApp,
   IonIcon,

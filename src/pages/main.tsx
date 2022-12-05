@@ -1,30 +1,40 @@
-import { IonContent, IonPage, IonItem, IonRefresher, IonRefresherContent, RefresherEventDetail, IonButtons, IonMenuButton } from '@ionic/react';
+import {
+  IonButton,
+  IonContent,
+  IonHeader,
+  IonMenu,
+  IonMenuToggle,
+  IonPage,
+  IonTitle,
+  IonToolbar,
+  IonIcon,
+  IonNav
+} from '@ionic/react';
 import Card from '../components/card';
-import Headermain from '../components/Headermain';
+import Menu from '../components/Menu'
+import { menuOutline, } from 'ionicons/icons';
 import Catagory from '../components/Catagory';
 import '../components/Main.css'
-function handleRefresh(event: CustomEvent<RefresherEventDetail>) {
-  setTimeout(() => {
-    // Any calls to load data go here
-    event.detail.complete();
-  }, 2000);
-}
 
-const main: React.FC = () => {
+function main() {
   return (
     <IonPage>
-      
-      <IonContent fullscreen className='container'>
-        <IonRefresher slot="fixed" onIonRefresh={handleRefresh}>
-          <IonRefresherContent>
-          </IonRefresherContent>
-        </IonRefresher>
-        <Headermain />
-        <div className='main-content'>
-          <Catagory />
-          <Card />
-        </div>
-      </IonContent>
+      <Menu />
+      <IonPage id="main-content">
+        <IonHeader className='header-menu'>
+          <IonMenuToggle className='menu-icon'>
+            <IonIcon icon={menuOutline} />
+          </IonMenuToggle>
+          <img src='assets/images/logo.png' />
+        </IonHeader>
+        <IonContent className="ion-padding">
+          <div className='main-content'>
+            <div className='bg-red'></div>
+            <Catagory/> 
+            <Card/>                     
+          </div>
+        </IonContent>
+      </IonPage>
     </IonPage>
   );
 };
