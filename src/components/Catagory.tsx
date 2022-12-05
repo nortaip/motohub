@@ -1,36 +1,38 @@
 
-import { IonGrid, IonRow, IonCard, IonCol } from '@ionic/react';
+import { IonGrid, IonRow, IonCard, IonCol, IonLabel } from '@ionic/react';
 import './Main.css';
 
 function catagory() {
     return (
-        <IonGrid>
-            <h3>Bыбрать категорию</h3>
-            <IonRow>
-                <IonCol>
-                    <IonCard>
-                        <img alt="Велосипед" src="../imgs/logos/apps.svg" />
+        <IonGrid className='catagory'>
+            <h3 className='wh'>Bыбрать категорию</h3>
+            <IonRow className='sb'>
+                <IonCol className='cat'>
+                    <IonCard class='card-cat'>
+                        <img className='svg' alt="Велосипед" src="assets/images/pedal_bike.svg" />
                     </IonCard>
+                    <IonLabel className='Crardlabel'><h6 className='h6'>Label</h6></IonLabel>
                 </IonCol>
-                <IonCol>
-                    <IonCard>
-                        <img alt="Скутер" src="../I" />
+                <IonCol className='cat'>
+                    <IonCard class='card-cat'> 
+                        <img className='svg' alt="Скутер" src="assets/images/electric_scooter.svg" />
                     </IonCard>
+                    <IonLabel className='Crardlabel'><h6 className='h6'>Label</h6></IonLabel>
                 </IonCol>
-                <IonCol>
-                    <IonCard>
-                        <img alt="Мопед" src="../I" />
+                <IonCol className='cat'>
+                    <IonCard class='card-cat'> 
+                        <img className='svg' alt="Мопед" src="assets/images/electric_moped.svg" />
                     </IonCard>
+                    <IonLabel className='Crardlabel'><h6 className='h6'>Label</h6></IonLabel>
                 </IonCol>
-                <IonCol>
-                    <IonCard>
-                        <img alt="Другое" src="../I" />
+                <IonCol className='cat'>
+                    <IonCard class='card-cat'>
+                        <img className='svg' alt="Другое" src="assets/images/apps.svg" />
                     </IonCard>
+                    <IonLabel className='Crardlabel'><h6 className='h6'>Label</h6></IonLabel>
                 </IonCol>
             </IonRow>
-
         </IonGrid>
-
     );
 }
 export default catagory;

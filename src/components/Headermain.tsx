@@ -1,5 +1,4 @@
-import { IonButtons, IonMenuButton, IonTitle, IonToolbar, RefresherEventDetail, } from '@ionic/react';
-
+import { IonButtons, IonMenuButton, IonToolbar } from '@ionic/react';
 import './Main.css';
 
 
@@ -9,7 +8,7 @@ const main: React.FC = () => {
             <IonButtons slot="start">
                 <IonMenuButton autoHide={false}></IonMenuButton>
             </IonButtons>
-            <img src='../Imgs/logos/Group.png' alt='Logo' className='Logo' />
+            <img src='assets/images/logo.png' className='Logo' />
         </IonToolbar>
     );
 };

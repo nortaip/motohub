@@ -1,4 +1,4 @@
-import { IonContent, IonPage, IonToolbar, IonTitle, IonRefresher, IonRefresherContent, RefresherEventDetail, IonButtons, IonMenuButton } from '@ionic/react';
+import { IonContent, IonPage, IonItem, IonRefresher, IonRefresherContent, RefresherEventDetail, IonButtons, IonMenuButton } from '@ionic/react';
 import Card from '../components/card';
 import Headermain from '../components/Headermain';
 import Catagory from '../components/Catagory';
@@ -13,14 +13,16 @@ function handleRefresh(event: CustomEvent<RefresherEventDetail>) {
 const main: React.FC = () => {
   return (
     <IonPage>
-      <IonContent fullscreen>
+      <IonContent fullscreen className='container'>
         <IonRefresher slot="fixed" onIonRefresh={handleRefresh}>
           <IonRefresherContent>
           </IonRefresherContent>
         </IonRefresher>
         <Headermain />
-        <Catagory />
-        <Card />
+        <div className='main-content'>
+          <Catagory />
+          <Card />
+        </div>
       </IonContent>
     </IonPage>
   );
