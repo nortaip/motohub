@@ -7,13 +7,13 @@ function Example() {
   return (
     <>
       <IonSegment value="custom">
-        <IonSegmentButton value="custom">
+        <IonSegmentButton value="Все">
           <IonLabel>Все</IonLabel>
         </IonSegmentButton>
-        <IonSegmentButton value="segment">
+        <IonSegmentButton value="Опубликованные">
           <IonLabel>Опубликованные</IonLabel>
         </IonSegmentButton>
-        <IonSegmentButton value="segmen4t">
+        <IonSegmentButton value="Ожидают проверки">
           <IonLabel>Ожидают проверки</IonLabel>
         </IonSegmentButton>
       </IonSegment>

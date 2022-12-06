@@ -3,7 +3,8 @@ import {
   IonHeader,
   IonMenuToggle,
   IonPage,
-  IonIcon
+  IonIcon,
+  IonButton
 } from '@ionic/react';
 import Card from '../components/addcatagory';
 import Menu from '../components/Menu'
@@ -26,6 +27,7 @@ function main() {
           <h4 className='center header-h'>Добавить Обьявление</h4>
           <Card />
           <Inputs />
+          <IonButton expand="block"className='btn'>Разместить бесплатно</IonButton>
         </IonContent>
       </IonPage>
     </IonPage>

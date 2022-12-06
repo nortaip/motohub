@@ -11,7 +11,7 @@ function Inputs() {
   return (
     <>
       <IonGrid>
-        <IonItem className='input'>
+        <IonItem className='input md'>
           {/* <IonLabel>Модель</IonLabel> */}
           <IonSelect interfaceOptions={customActionSheetOptions} interface="action-sheet" placeholder="Модель">
             <IonSelectOption value="red">Red</IonSelectOption>
@@ -19,7 +19,7 @@ function Inputs() {
             <IonSelectOption value="blue">Blue</IonSelectOption>
           </IonSelect>
         </IonItem>
-        <IonItem className='input'>
+        <IonItem className='input md'>
           {/* <IonLabel>Модель</IonLabel> */}
           <IonSelect interfaceOptions={customActionSheetOptions} interface="action-sheet" placeholder="Год выпуска">
             <IonSelectOption value="red">Red</IonSelectOption>

@@ -3,7 +3,8 @@ import {
   IonHeader,
   IonMenuToggle,
   IonPage,
-  IonIcon
+  IonIcon,
+  IonButton
 } from '@ionic/react';
 import Menu from '../components/Menu'
 import { menuOutline, } from 'ionicons/icons';
@@ -21,12 +22,14 @@ const LIkes: React.FC = () => {
           </IonMenuToggle>
           <img src='assets/images/logo.png' />
         </IonHeader>
-        <IonContent className="ion-padding">
+        <IonContent className="ion-padding ">
           <h4 className='center header-h'>Обьявления</h4>
           <Segment/>
           <LikeCards/>
+          <IonButton expand="block"className='btn'>Разместить бесплатно</IonButton>
         </IonContent>
       </IonPage>
+      
     </IonPage>
   );
 };

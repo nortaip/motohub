@@ -9,7 +9,7 @@ function Likecard() {
                 <IonRow className='card-group'>
                     <IonCol class='card'>
                         <div className='badge'>
-                            <div className="badge-pr">реклама</div>
+                            <div className="user-Sales ">Продано</div>
                             <div className="like"><IonIcon icon={heart} className='like' /></div>
                         </div>
                         <img className='img-card' alt="moto" src="assets/images/moto.jpg" />
@@ -22,6 +22,32 @@ function Likecard() {
                     <IonCol class='card'>
                         <div className='badge'>
                             <div className="badge-pr">реклама</div>
+                            <div className="like"><IonIcon icon={heart} className='like' /></div>
+                        </div>
+                        <img className='img-card' alt="moto" src="assets/images/moto.jpg" />
+                        <IonCardHeader className='info'>
+                            <IonCardSubtitle class='subtitle'>Уже продан</IonCardSubtitle>
+                            <IonCardTitle class='Title'>Harley-Davidson</IonCardTitle>
+                            <IonCardContent class='time'>2020 г., 50 000кm</IonCardContent>
+                        </IonCardHeader>
+                    </IonCol>
+                </IonRow>
+                <IonRow className='card-group'>
+                    <IonCol class='card'>
+                        <div className='badge'>
+                            <div className="user-Under-review">На проверке</div>
+                            <div className="like"><IonIcon icon={heart} className='like' /></div>
+                        </div>
+                        <img className='img-card' alt="moto" src="assets/images/moto.jpg" />
+                        <IonCardHeader className='info'>
+                            <IonCardSubtitle class='subtitle'>Уже продан</IonCardSubtitle>
+                            <IonCardTitle class='Title'>Harley-Davidson</IonCardTitle>
+                            <IonCardContent class='time'>2020 г., 50 000кm</IonCardContent>
+                        </IonCardHeader>
+                    </IonCol>
+                    <IonCol class='card'>
+                        <div className='badge'>
+                            <div className="user-Published">Опубликовано</div>
                             <div className="like"><IonIcon icon={heart} className='like' /></div>
                         </div>
                         <img className='img-card' alt="moto" src="assets/images/moto.jpg" />
