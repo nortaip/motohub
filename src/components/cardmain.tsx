@@ -2,9 +2,10 @@ import { IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent, IonIcon, 
 import './Main.css';
 import { heart } from 'ionicons/icons';
 
-const main: React.FC = () => {
+const CardMain: React.FC = () => {
     return (
         <>
+
             <IonCol class='card'>
                 <div className='badge'>
                     <div className="badge-pr">реклама</div>
@@ -29,9 +30,9 @@ const main: React.FC = () => {
                     <IonCardContent class='time'>2020 г., 50 000кm</IonCardContent>
                 </IonCardHeader>
             </IonCol>
-            
+
         </>
     );
 };
 
-export default main;
+export default CardMain;

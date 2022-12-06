@@ -5,13 +5,12 @@ import {
   IonPage,
   IonIcon
 } from '@ionic/react';
-import Card from '../components/card';
 import Menu from '../components/Menu'
 import { menuOutline, } from 'ionicons/icons';
-import Catagory from '../components/Catagory';
 import '../components/Main.css'
-
-function main() {
+import Segment from '../components/segment';
+import LikeCards from '../components/Likecard'
+const LIkes: React.FC = () => {
   return (
     <IonPage>
       <Menu />
@@ -23,15 +22,13 @@ function main() {
           <img src='assets/images/logo.png' />
         </IonHeader>
         <IonContent className="ion-padding">
-          <div className='main-content'>
-            <div className='bg-red'></div>
-            <Catagory />
-            <Card />
-          </div>
+          <h4 className='center header-h'>Обьявления</h4>
+          <Segment/>
+          <LikeCards/>
         </IonContent>
       </IonPage>
     </IonPage>
   );
 };
 
-export default main;
+export default LIkes;

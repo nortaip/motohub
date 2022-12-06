@@ -152,7 +152,9 @@ ion-card-header.ios {
   flex-direction: column;
   align-items: center;
   display: flex;
-  padding: 14px 16px;
+  /* padding: 15px 16px; */
+  width: 65px;
+  height: 65px;
   order: 0;
   flex-grow: 0;
   background: var(--ion-color-light-back);
@@ -465,4 +467,70 @@ ion-card-header.ios {
 
 .version {
   text-align: center;
+}
+
+.center {
+  text-align: center;
+  align-items: center;
+}
+
+.header-h {
+  font-family: 'TT Firs Neue';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--ion-color-light-black);
+}
+
+.input {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 16px;
+  margin-bottom: 16px;
+  gap: 16px;
+  width: 100%;
+  height: 56px;
+  /* SystemGray/Light 05 */
+  border: 2px solid #E5E5EA;
+  border-radius: 13px;
+  color: var(--ion-color-light-black) !important;
+}
+
+.input-area {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+}
+
+/* plecholder color and opasity*/
+ion-select::part(placeholder) {
+  color: var(--ion-color-light-label);
+  opacity: 1;
+}
+
+ion-select::part(placeholder) {
+  font-family: 'TT Firs Neue';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+ion-select::part(button) {
+  background-color: #007AFF;
+}
+
+ion-segment {
+  --background: #54dc9800;
+  font-family: 'TT Firs Neue';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
 }

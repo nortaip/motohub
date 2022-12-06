@@ -6,8 +6,7 @@ import Card from '../components/card';
 function catagory() {
     return (
         <>
-            
-                <Catbtn />
+            <Catbtn />
         </>
     );
 }

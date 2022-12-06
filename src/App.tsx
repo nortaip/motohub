@@ -14,8 +14,8 @@ import { IonReactRouter } from '@ionic/react-router';
 import { search, home, addCircle, heartOutline, personOutline } from 'ionicons/icons';
 import Main from './pages/main';
 import Tab2 from './pages/Tab2';
-import Tab3 from './pages/Tab3';
-import Tab4 from './pages/Tab4';
+import Tab3 from './pages/Add';
+import Tab4 from './pages/Likes';
 import Tab5 from './pages/Tab5';
 
 /* Core CSS required for Ionic components to work properly */

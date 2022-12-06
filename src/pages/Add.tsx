@@ -5,10 +5,10 @@ import {
   IonPage,
   IonIcon
 } from '@ionic/react';
-import Card from '../components/card';
+import Card from '../components/addcatagory';
 import Menu from '../components/Menu'
 import { menuOutline, } from 'ionicons/icons';
-import Catagory from '../components/Catagory';
+import Inputs from '../components/Inputs';
 import '../components/Main.css'
 
 function main() {
@@ -23,11 +23,9 @@ function main() {
           <img src='assets/images/logo.png' />
         </IonHeader>
         <IonContent className="ion-padding">
-          <div className='main-content'>
-            <div className='bg-red'></div>
-            <Catagory />
-            <Card />
-          </div>
+          <h4 className='center header-h'>Добавить Обьявление</h4>
+          <Card />
+          <Inputs />
         </IonContent>
       </IonPage>
     </IonPage>
