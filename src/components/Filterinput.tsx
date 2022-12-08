@@ -1,6 +1,6 @@
 import '../components/Main.css'
 
-import { IonCol, IonGrid, IonRow, IonItem, IonList, IonSelect, IonSelectOption } from '@ionic/react';
+import { IonCol, IonGrid, IonRow, IonItem, IonContent, IonSelect, IonSelectOption, IonButton } from '@ionic/react';
 
 function Inputs() {
   const customActionSheetOptions = {
@@ -10,6 +10,7 @@ function Inputs() {
 
   return (
     <>
+    <IonContent className="ion-padding">
       <IonGrid>
         <IonItem className='input md'>
           {/* <IonLabel>Модель</IonLabel> */}
@@ -170,6 +171,8 @@ function Inputs() {
           </IonCol>
         </IonRow>
       </IonGrid>
+      <IonButton className='btn' id='close-modal'>Применить фильтры</IonButton>
+      </IonContent>
     </>
   );
 }
