@@ -13,10 +13,10 @@ import {
 import { IonReactRouter } from '@ionic/react-router';
 import { search, home, addCircle, heartOutline, personOutline } from 'ionicons/icons';
 import Main from './pages/main';
-import Tab2 from './pages/Search';
-import Tab3 from './pages/Add';
-import Tab4 from './pages/Likes';
-import Tab5 from './pages/Profile';
+import Search from './pages/Search';
+import Add from './pages/Add';
+import Likes from './pages/Likes';
+import Profile from './pages/Profile';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -47,17 +47,17 @@ const App: React.FC = () => (
           <Route exact path="/main">
             <Main />
           </Route>
-          <Route exact path="/tab2">
-            <Tab2 />
+          <Route exact path="/Search">
+            <Search />
           </Route>
-          <Route path="/tab3">
-            <Tab3 />
+          <Route path="/Add">
+            <Add />
           </Route>
-          <Route path="/tab4">
-            <Tab4 />
+          <Route path="/Likes">
+            <Likes />
           </Route>
-          <Route path="/tab5">
-            <Tab5 />
+          <Route path="/Profile">
+            <Profile/>
           </Route>
           <Route exact path="/">
             <Redirect to="/main" />
@@ -68,19 +68,19 @@ const App: React.FC = () => (
             <IonIcon icon={home} />
             <IonLabel>Home</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab2" href="/tab2">
+          <IonTabButton tab="Search" href="/Search">
             <IonIcon icon={search} />
             <IonLabel>search</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab3" href="/tab3">
+          <IonTabButton tab="Add" href="/Add">
             <IonIcon icon={addCircle} />
             <IonLabel>Add</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab4" href="/tab4">
+          <IonTabButton tab="Likes" href="/Likes">
             <IonIcon icon={heartOutline} />
             <IonLabel>Likes</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab5" href="/tab5">
+          <IonTabButton tab="Profile" href="/Profile">
             <IonIcon icon={personOutline} />
             <IonLabel>Profile</IonLabel>
           </IonTabButton>
