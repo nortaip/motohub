@@ -98,10 +98,10 @@ ion-card-header.ios {
 .sb {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   padding: 0px;
-  gap: 5px;
+  justify-content: space-between;
+  flex-wrap: nowrap;
 }
 
 .header-menu {
@@ -152,7 +152,7 @@ ion-card-header.ios {
   flex-direction: column;
   align-items: center;
   display: flex;
-  /* padding: 15px 16px; */
+  padding: 8px 8px;
   width: 65px;
   height: 65px;
   order: 0;
@@ -168,9 +168,19 @@ ion-card-header.ios {
 }
 
 .svg {
-  width: 37px;
+  width: 100%;
   height: 37px;
-  color: #da291c !important;
+  fill: #1C1C1E !important;
+}
+
+path {
+  fill: #1C1C1E !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  svg {
+    fill: #AFAFAF !important;
+  }
 }
 
 .cat {
@@ -547,7 +557,10 @@ ion-card-header.ios {
   border: 2px solid #E5E5EA;
   border-radius: 13px;
   color: var(--ion-color-light-black) !important;
+  --highlight-height: none;
 }
+
+
 
 .input-area {
   display: flex;
@@ -561,6 +574,30 @@ ion-card-header.ios {
 ion-select::part(placeholder) {
   color: var(--ion-color-light-label);
   opacity: 1;
+  --border-color: none !important;
+  --border-style: none;
+  --border-width: none;
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+}
+
+.item-interactive {
+  --border-width: 0 0 0 0 !important;
+  --inner-border-width: 0;
+  --show-full-highlight: 0;
+  --show-inset-highlight: 0;
+}
+
+ion-select {
+  color: var(--ion-color-light-label);
+  opacity: 1;
+  --border-color: none !important;
+  --border-style: none;
+  --border-width: none;
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
 }
 
 ion-select::part(placeholder) {
