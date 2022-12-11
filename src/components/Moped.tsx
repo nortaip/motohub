@@ -10,7 +10,7 @@ import {
   IonTitle,
 } from '@ionic/react';
 
-// import PageThree from './page-three';
+import PageThree from '../pages/Mopeds';
 
 function PageTwo() {
   return (
@@ -25,9 +25,9 @@ function PageTwo() {
       </IonHeader>
       <IonContent class="ion-padding">
         <h1>Page Two</h1>
-        {/* <IonNavLink routerDirection="forward" component={() => <PageThree />}> */}
+        <IonNavLink routerDirection="forward" component={() => <PageThree />}>
           <IonButton>Go to Page Three</IonButton>
-        {/* </IonNavLink> */}
+        </IonNavLink>
       </IonContent>
     </>
   );

@@ -1,21 +1,36 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
-import Tab from '../components/Menu';
+import React from 'react';
+import {
+  IonBackButton,
+  IonButtons,
+  IonButton,
+  IonHeader,
+  IonContent,
+  IonNavLink,
+  IonToolbar,
+  IonTitle,
+} from '@ionic/react';
 
-const Tab2: React.FC = () => {
+import PageThree from './page-three';
+
+function PageTwo() {
   return (
-    <IonPage>
-      <Tab />
-      <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Tab 2</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer name="Tab 2 page" />
+    <>
+      <IonHeader>
+        <IonToolbar>
+          <IonButtons slot="start">
+            <IonBackButton></IonBackButton>
+          </IonButtons>
+          <IonTitle>Page Two</IonTitle>
+        </IonToolbar>
+      </IonHeader>
+      <IonContent class="ion-padding">
+        <h1>Page Two</h1>
+        <IonNavLink routerDirection="forward" component={() => <PageThree />}>
+          <IonButton>Go to Page Three</IonButton>
+        </IonNavLink>
       </IonContent>
-    </IonPage>
+    </>
   );
-};
+}
 
-export default Tab2;
+export default PageTwo;

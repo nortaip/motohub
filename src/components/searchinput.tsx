@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { IonItem, IonList, IonIcon, IonSearchbar, IonModal, IonContent, IonHeader, IonToolbar, IonTitle, IonButton, IonButtons } from '@ionic/react';
 import { optionsOutline } from 'ionicons/icons';
 import Filterinput from './Filterinput'
-function Example() {
+function Search() {
   const data = ['Amsterdam', 'Buenos Aires', 'Cairo', 'Geneva', 'Hong Kong', 'Istanbul', 'London', 'Madrid', 'New York', 'Panama City'];
   let [results, setResults] = useState([...data]);
   const modal = useRef<HTMLIonModalElement>(null);
@@ -49,4 +49,4 @@ function Example() {
     </>
   );
 }
-export default Example;
+export default Search;

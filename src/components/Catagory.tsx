@@ -1,21 +1,21 @@
 
-import { IonGrid, IonRow, IonCard, IonCol, IonLabel, } from '@ionic/react';
-import { IonReactRouter } from '@ionic/react-router';
+import { IonGrid, IonRow, IonCard, IonCol, IonLabel, IonNavLink, IonButton } from '@ionic/react';
 import './Main.css';
-// import Mopeds from './Moped';
+import Mopeds from '../pages/Mopeds';
 
 function catagory() {
     return (
         <>
             <IonGrid className='catagory'>
                 <h3 className='wh'>Bыбрать категорию</h3>
-                <IonReactRouter>
                     <IonRow className='sb'>
                         <IonCol className='cat'>
-                            <IonCard class='card-cat'>
+                        <IonNavLink routerDirection="forward" component={() => <Mopeds />}>
+                            <IonCard class='card-cat' >
                                 <img className='svg-bike' alt="Велосипед" src="assets/images/pedal_bike.svg" />
                             </IonCard>
                             <IonLabel className='Crardlabel'><h6 className='h6'>Велосипед</h6></IonLabel>
+                            </IonNavLink>
                         </IonCol>
                         <IonCol className='cat'>
                             <IonCard class='card-cat' >
@@ -36,7 +36,6 @@ function catagory() {
                             <IonLabel className='Crardlabel'><h6 className='h6'>Другое</h6></IonLabel>
                         </IonCol>
                     </IonRow>
-                </IonReactRouter>
             </IonGrid>
         </>
     );

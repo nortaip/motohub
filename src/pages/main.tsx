@@ -5,6 +5,7 @@ import {
   IonPage,
   IonIcon
 } from '@ionic/react';
+import { IonNav } from '@ionic/react';
 import Card from '../components/card';
 import Menu from '../components/Menu'
 import { menuOutline, } from 'ionicons/icons';
@@ -16,17 +17,17 @@ function main() {
     <IonPage>
       <Menu />
       <IonPage id="main-content">
-        <IonHeader className='header-menu'>
+        {/* <IonHeader className='header-menu'>
           <IonMenuToggle className='menu-icon'>
             <IonIcon icon={menuOutline} />
           </IonMenuToggle>
           <img src='assets/images/logo.png' />
-        </IonHeader>
+        </IonHeader> */}
         <IonContent className="ion-padding">
           <div className='main-content'>
             <div className='bg-red'></div>
-            <Catagory />
-            <Card />
+            <IonNav root={() => <Catagory />}></IonNav>
+            {/* <Card /> */}
           </div>
         </IonContent>
       </IonPage>
