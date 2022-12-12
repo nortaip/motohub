@@ -1,15 +1,12 @@
 import {
   IonContent,
-  IonHeader,
-  IonMenuToggle,
   IonPage,
-  IonIcon
 } from '@ionic/react';
 import { IonNav } from '@ionic/react';
-import Card from '../components/card';
 import Menu from '../components/Menu'
-import { menuOutline, } from 'ionicons/icons';
 import Catagory from '../components/Catagory';
+import Headermain from '../components/Headermain';
+import Card from '../components/card';
 import '../components/Main.css'
 
 function main() {
@@ -17,17 +14,12 @@ function main() {
     <IonPage>
       <Menu />
       <IonPage id="main-content">
-        {/* <IonHeader className='header-menu'>
-          <IonMenuToggle className='menu-icon'>
-            <IonIcon icon={menuOutline} />
-          </IonMenuToggle>
-          <img src='assets/images/logo.png' />
-        </IonHeader> */}
+        <Headermain />
         <IonContent className="ion-padding">
           <div className='main-content'>
             <div className='bg-red'></div>
             <IonNav root={() => <Catagory />}></IonNav>
-            {/* <Card /> */}
+            <IonNav root={() => <Card />}></IonNav>
           </div>
         </IonContent>
       </IonPage>

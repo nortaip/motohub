@@ -1,4 +1,4 @@
-import React from 'react';
+import '../components/Main.css';
 import {
   IonBackButton,
   IonButtons,
@@ -10,7 +10,7 @@ import {
   IonTitle,
 } from '@ionic/react';
 
-import PageThree from './page-three';
+import Likecard from '../components/Likecard';
 
 function PageTwo() {
   return (
@@ -20,14 +20,11 @@ function PageTwo() {
           <IonButtons slot="start">
             <IonBackButton></IonBackButton>
           </IonButtons>
-          <IonTitle>Page Two</IonTitle>
+          <IonTitle class="ion-text-center">Мопеды</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent class="ion-padding">
-        <h1>Page Two</h1>
-        <IonNavLink routerDirection="forward" component={() => <PageThree />}>
-          <IonButton>Go to Page Three</IonButton>
-        </IonNavLink>
+        <Likecard/>
       </IonContent>
     </>
   );

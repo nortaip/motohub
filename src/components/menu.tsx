@@ -1,15 +1,12 @@
-import { IonMenu, IonPage, IonContent } from '@ionic/react';
-import Profilesettings from './profilesettings'
-import UserInfo from './usercard';
+import { IonMenu, IonPage, IonNav } from '@ionic/react';
+import User from '../components/user'
+
 function Menu() {
 
     return (
         <>
             <IonMenu contentId="main-content">
-                <div className='user-main'>
-                    <UserInfo />
-                </div>
-                <Profilesettings />
+                <User/>
             </IonMenu>
         </>
     );

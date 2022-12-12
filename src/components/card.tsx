@@ -1,26 +1,18 @@
 
-import { IonCol, IonGrid, IonRow } from '@ionic/react';
+import { IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent, IonIcon, IonCol, IonRow } from '@ionic/react';
+import { heart } from 'ionicons/icons';
 import Cardmain from './cardmain'
 import './Main.css';
 
 
 function Card() {
     return (
-
-        <IonGrid className='products'>
+        <div className='main-contenttt'>
             <h4 className='whh'> Подборка для вас</h4>
-            <div className="dd">
-                <IonRow className='card-group'>
-                    <Cardmain />
-                </IonRow>
-                <IonRow className='card-group'>
-                    <Cardmain />
-                </IonRow>
-                <IonRow className='card-group'>
-                    <Cardmain />
-                </IonRow>
-            </div>
-        </IonGrid>
+            <IonRow className='card-group'>
+                <Cardmain />
+            </IonRow>
+        </div>
     );
 }
 export default Card;

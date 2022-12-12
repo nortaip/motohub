@@ -16,31 +16,16 @@ import {
     IonButton,
     IonItem
 } from '@ionic/react';
+import { menuOutline, } from 'ionicons/icons';
+
 const Headermain: React.FC = () => (
 
-    <IonMenu content-id="main-content">
-        <IonHeader>
-            <IonToolbar color="primary">
-                <IonTitle>Menu</IonTitle>
-            </IonToolbar>
-        </IonHeader>
-
-        <IonContent>
-            <IonList>
-                <IonListHeader>
-                    Navigate
-                </IonListHeader>
-                <IonMenuToggle auto-hide="false">
-                    <IonItem button>
-                        <IonIcon slot="start" name='home'></IonIcon>
-                        <IonLabel>
-                            Home
-                        </IonLabel>
-                    </IonItem>
-                </IonMenuToggle>
-            </IonList>
-        </IonContent>
-    </IonMenu>
+    <IonHeader className='header-menu'>
+    <IonMenuToggle className='menu-icon'>
+      <IonIcon icon={menuOutline} />
+    </IonMenuToggle>
+    <img src='assets/images/logo.png' />
+  </IonHeader>
 );
 
 export default Headermain;
