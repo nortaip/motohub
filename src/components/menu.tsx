@@ -1,5 +1,5 @@
 import { IonMenu, IonPage, IonNav } from '@ionic/react';
-import User from '../components/user'
+import User from './user'
 
 function Menu() {
 
