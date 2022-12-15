@@ -7,9 +7,6 @@ import {
   IonToolbar,
   IonTitle,
   IonPage,
-  IonItem,
-  IonLabel,
-  IonInput,
   useIonModal,
 } from '@ionic/react';
 import { OverlayEventDetail } from '@ionic/core/components';
@@ -36,13 +33,13 @@ const ModalExample = ({
         </IonToolbar>
       </IonHeader>
       <IonContent className="ion-padding">
-      <Inputs />
+        <Inputs />
       </IonContent>
     </IonPage>
   );
 };
 
-function Example() {
+function Filter() {
   const [present, dismiss] = useIonModal(ModalExample, {
     onDismiss: (data: string, role: string) => dismiss(data, role),
   });
@@ -65,12 +62,12 @@ function Example() {
           <IonTitle>Controller Modal</IonTitle>
         </IonToolbar>
       </IonHeader>
-        <IonButton expand="block" onClick={() => openModal()}>
-          Open
-        </IonButton>
-        <p>{message}</p>
+      <IonButton expand="block" onClick={() => openModal()}>
+        Open
+      </IonButton>
+      <p>{message}</p>
     </IonPage>
   );
 }
 
-export default Example;
+export default Filter;

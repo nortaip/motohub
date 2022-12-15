@@ -2,7 +2,7 @@ import {
   IonContent,
   IonPage,
 } from '@ionic/react';
-import { IonNav } from '@ionic/react';
+
 import Menu from '../components/Menu'
 import Catagory from '../components/Catagory';
 import Headermain from '../components/Headermain';
@@ -18,12 +18,12 @@ function main() {
         <IonContent className="ion-padding">
           <div className='main-content'>
             <div className='bg-red'></div>
-            <IonNav root={() => <Catagory />}></IonNav>
-            <IonNav root={() => <Card />}></IonNav>
+            <Catagory />
+            <Card />
           </div>
         </IonContent>
       </IonPage>
-    </IonPage>
+    </IonPage >
   );
 };
 

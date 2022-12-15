@@ -286,7 +286,7 @@ path {
   align-items: center;
   padding: 0px;
   gap: 21px;
-  margin-top: 175px;
+  /* margin-top: 175px; */
   background-color: transparent;
 }
 
@@ -412,6 +412,7 @@ path {
   right: 0%;
   top: 0%;
   bottom: 80.59%;
+  z-index: -1;
   background: var(--ion-color-light-red);
 }
 
