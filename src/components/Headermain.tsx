@@ -1,30 +1,17 @@
 import {
-    IonApp,
-    IonHeader,
-    IonToolbar,
-    IonTitle,
-    IonContent,
-    IonFooter,
-    IonMenu,
-    IonList,
-    IonListHeader,
-    IonMenuToggle,
-    IonIcon,
-    IonLabel,
-    IonPage,
-    IonButtons,
-    IonButton,
-    IonItem
+  IonHeader,
+  IonMenuToggle,
+  IonIcon,
 } from '@ionic/react';
 import { menuOutline, } from 'ionicons/icons';
 
 const Headermain: React.FC = () => (
 
-    <IonHeader className='header-menu'>
+  <IonHeader className='header-menu'>
     <IonMenuToggle className='menu-icon'>
       <IonIcon icon={menuOutline} />
     </IonMenuToggle>
-    <img src='assets/images/logo.png' />
+    <img alt='Logo' src='assets/images/logo.png' />
   </IonHeader>
 );
 

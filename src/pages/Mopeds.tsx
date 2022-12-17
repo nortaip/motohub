@@ -2,7 +2,7 @@ import '../components/Main.css';
 import {
   IonBackButton,
   IonButtons,
-  IonButton,
+  IonChip,
   IonHeader,
   IonContent,
   IonToolbar,
@@ -11,7 +11,7 @@ import {
   IonCol,
   IonIcon
 } from '@ionic/react';
-import { optionsOutline } from 'ionicons/icons';
+import { optionsOutline, filterOutline } from 'ionicons/icons';
 
 import Likecard from '../components/Likecard';
 
@@ -27,11 +27,12 @@ function PageTwo() {
         </IonToolbar>
       </IonHeader>
       <IonRow>
-        <IonButtons>
-          <IonCol>
-            <IonButton className='filter-madal'>Фильтр  <IonIcon icon={optionsOutline} /></IonButton>
-          </IonCol>
-        </IonButtons>
+        <IonCol>
+          <IonChip className='filter-madal'><p>Фильтр</p>  <IonIcon className='ce' icon={optionsOutline} /></IonChip>
+        </IonCol>
+        <IonCol>
+          <IonChip className='filter-madal'><p>Сортировка</p> <IonIcon className='ce' icon={filterOutline} /></IonChip>
+        </IonCol>
       </IonRow>
       <IonContent class="ion-padding">
         <Likecard />

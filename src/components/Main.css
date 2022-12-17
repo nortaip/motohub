@@ -53,6 +53,19 @@ h6 {
   line-height: 17px;
 }
 
+.ce {
+  color: var(--ion-color-light-black) !important;
+}
+
+p {
+  font-family: 'TT Firs Neue';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+
+}
+
 ion-header {
   display: block;
   position: relative;
@@ -403,7 +416,7 @@ path {
 
 .bg-red {
   position: absolute;
-  height: 130px;
+  height: 150px;
   left: 0%;
   right: 0%;
   top: 0%;
@@ -778,6 +791,7 @@ ion-checkbox::part(container) {
 .filter-madal {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   padding: 8px 16px;
   gap: 8px;

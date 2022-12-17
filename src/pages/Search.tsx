@@ -4,11 +4,9 @@ import {
   IonMenuToggle,
   IonPage,
   IonIcon,
-  IonButton
 } from '@ionic/react';
 import Menu from '../components/Menu'
 import { menuOutline, } from 'ionicons/icons';
-import Inputs from '../components/FilterInput';
 import Search from '../components/SearchInput';
 import '../components/Main.css'
 
@@ -21,7 +19,7 @@ function main() {
           <IonMenuToggle className='menu-icon'>
             <IonIcon icon={menuOutline} />
           </IonMenuToggle>
-          <img src='assets/images/logo.png' />
+          <img alt='Logo' src='assets/images/logo.png' />
         </IonHeader>
         <IonContent className="ion-padding ">
           <h3 className='center header-h'>Поиск</h3>

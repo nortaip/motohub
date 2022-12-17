@@ -20,7 +20,7 @@ const LIkes: React.FC = () => {
           <IonMenuToggle className='menu-icon'>
             <IonIcon icon={menuOutline} />
           </IonMenuToggle>
-          <img src='assets/images/logo.png' />
+          <img alt='Logo' src='assets/images/logo.png' />
         </IonHeader>
         <IonContent className="ion-padding ">
           <h4 className='center header-h'>Обьявления</h4>
