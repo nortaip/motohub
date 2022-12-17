@@ -105,10 +105,10 @@ ion-card-header.ios {
 .sb {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  padding: 0px;
   justify-content: space-between;
-  flex-wrap: nowrap;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 5px;
 }
 
 .header-menu {
@@ -276,14 +276,13 @@ path {
   justify-content: center;
 }
 
-.main-contenttt{
+.main-content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 0px;
   gap: 21px;
-  margin-top: 200px;
   background-color: transparent;
 }
 
@@ -586,8 +585,6 @@ path {
   --highlight-height: none;
 }
 
-
-
 .input-area {
   display: flex;
   /* flex-direction: column; */
@@ -775,5 +772,5 @@ ion-checkbox {
 
 ion-checkbox::part(container) {
   border-radius: 50%;
-  border: 2px solid  var(--ion-color-light-black);
+  border: 2px solid var(--ion-color-light-black);
 }
