@@ -1,10 +1,10 @@
-:host{
---placeholder-opacity: 1 !important;
+:host {
+  --placeholder-opacity: 1 !important;
 }
 
 :root {
   /** primary **/
-  
+  --ion-font-family: 'TT Firs Neue';
   --ion-color-primary: #DA291C;
   --ion-color-primary-rgb: 56, 128, 255;
   --ion-color-primary-contrast: #ffffff;
@@ -80,32 +80,32 @@
   /**light main colors**/
   --ion-color-border: #8E8E93;
   --ion-color-border2: #F2F2F7;
-  --ion-color-text-light:#ffffff;
-  --ion-color-text-light2:#ffffff;
+  --ion-color-text-light: #ffffff;
+  --ion-color-text-light2: #ffffff;
   --ion-color-light-blue: #007AFF;
   --ion-color-ligt-green: #34C759;
   --ion-color-light-black: #1C1C1E;
-  --ion-color-light-back:#F2f2f2;
+  --ion-color-light-back: #F2f2f2;
   --ion-color-light-red: #DA291C;
-  --ion-color-light-label:#8E8E93;
-  --ion-color-light-input:#E5E5EA;
+  --ion-color-light-label: #8E8E93;
+  --ion-color-light-input: #E5E5EA;
 
 
 }
 
 body.dark {
   /**darck main colors**/
-  --ion-color-light-input:#E5E5EA;
+  --ion-color-light-input: #E5E5EA;
   --ion-color-border: #222222;
   --ion-color-border2: #222222;
-  --ion-color-light-back:#222222;
-  --ion-color-text-light:#f3f1f1;
-  --ion-color-text-light2:#dfdede;
+  --ion-color-light-back: #222222;
+  --ion-color-text-light: #f3f1f1;
+  --ion-color-text-light2: #dfdede;
   --ion-color-ligt-green: #1E7E36;
   --ion-color-light-blue: #3E7ABB;
   --ion-color-light-black: #dfdede;
   --ion-color-light-red: #c51d11;
-  --ion-color-light-label:#dfdede;
+  --ion-color-light-label: #dfdede;
 
 
   --ion-color-primary: #AA170C;

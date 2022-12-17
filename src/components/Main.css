@@ -2,9 +2,9 @@
 
 :root {
   /* fonts */
-  --font-montserrat: Montserrat;
-  --medium-title: Montserrat;
-  --h2-bold: Montserrat;
+  --font-montserrat: TT Firs Neue;
+  --medium-title: TT Firs Neue;
+  --h2-bold: TT Firs Neue;
 }
 
 body {
@@ -21,11 +21,10 @@ h5,
 h6,
 small {
   font-family: 'TT Firs Neue' !important;
-  /* font-style: normal !important; */
+  font-style: normal !important;
 }
 
 h3 {
-  font-family: 'TT Firs Neue';
   font-style: normal !important;
   font-weight: 700 !important;
   font-size: 25px !important;
@@ -33,7 +32,6 @@ h3 {
 }
 
 h4 {
-  font-family: 'TT Firs Neue';
   font-style: normal !important;
   font-weight: 600 !important;
   font-size: 20px !important;
@@ -41,7 +39,6 @@ h4 {
 }
 
 .h4-regular {
-  font-family: 'TT Firs Neue' !important;
   font-style: normal !important;
   font-weight: 400 !important;
   font-size: 20px !important;
@@ -279,14 +276,14 @@ path {
   justify-content: center;
 }
 
-.main-contenttt {
+.main-contenttt{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 0px;
   gap: 21px;
-  /* margin-top: 175px; */
+  margin-top: 200px;
   background-color: transparent;
 }
 

@@ -1,5 +1,6 @@
 import {
   IonContent,
+  IonNav,
   IonPage,
 } from '@ionic/react';
 
@@ -18,8 +19,8 @@ function main() {
         <IonContent className="ion-padding">
           <div className='main-content'>
             <div className='bg-red'></div>
+            <IonNav root={() => <Card />} ></IonNav>
             <Catagory />
-            <Card />
           </div>
         </IonContent>
       </IonPage>
