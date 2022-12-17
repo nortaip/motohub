@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { IonItem, IonList, IonIcon, IonSearchbar, IonModal, IonContent, IonHeader, IonToolbar, IonTitle, IonButton, IonButtons } from '@ionic/react';
+import { IonItem, IonList, IonIcon, IonSearchbar, IonModal, IonHeader, IonToolbar, IonTitle, IonButton, IonButtons } from '@ionic/react';
 import { optionsOutline } from 'ionicons/icons';
-import Filterinput from './Filterinput'
+import Filterinput from './FilterInput'
 function Search() {
   const data = ['Amsterdam', 'Buenos Aires', 'Cairo', 'Geneva', 'Hong Kong', 'Istanbul', 'London', 'Madrid', 'New York', 'Panama City'];
   let [results, setResults] = useState([...data]);
@@ -32,7 +32,7 @@ function Search() {
       </div>
       <IonList>
         {results.map(result => (
-          <IonItem>{result}</IonItem>
+          <IonItem key={result}>{result}</IonItem>
         ))}
       </IonList>
       <IonModal ref={modal} trigger="open-modal" presentingElement={presentingElement!}>

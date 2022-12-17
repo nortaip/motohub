@@ -8,8 +8,8 @@ import {
 } from '@ionic/react';
 import Menu from '../components/Menu'
 import { menuOutline, } from 'ionicons/icons';
-import Inputs from '../components/Filterinput';
-import Search from '../components/searchinput';
+import Inputs from '../components/FilterInput';
+import Search from '../components/SearchInput';
 import '../components/Main.css'
 
 function main() {

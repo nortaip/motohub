@@ -774,3 +774,14 @@ ion-checkbox::part(container) {
   border-radius: 50%;
   border: 2px solid var(--ion-color-light-black);
 }
+
+.filter-madal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 8px;
+  color: var(--ion-color-light-black);
+  background: var(--ion-color-border2);
+  border-radius: 13px;
+}

@@ -4,7 +4,7 @@ import {
   IonPage,
 } from '@ionic/react';
 
-import Cardtest from '../components/cardtest';
+import Cardtest from '../components/MainPage';
 import '../components/Main.css'
 
 function main() {

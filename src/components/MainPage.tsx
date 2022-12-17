@@ -3,8 +3,8 @@ import {
     IonContent,
     IonPage,
 } from '@ionic/react';
-import Menu from '../components/Menu'
-import Headermain from '../components/Headermain';
+import Menu from './Menu'
+import Headermain from './Headermain';
 import '../components/Main.css'
 import Catagory from './Catagory';
 import Card from './card';

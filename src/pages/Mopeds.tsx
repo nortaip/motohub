@@ -5,10 +5,13 @@ import {
   IonButton,
   IonHeader,
   IonContent,
-  IonNavLink,
   IonToolbar,
   IonTitle,
+  IonRow,
+  IonCol,
+  IonIcon
 } from '@ionic/react';
+import { optionsOutline } from 'ionicons/icons';
 
 import Likecard from '../components/Likecard';
 
@@ -23,8 +26,15 @@ function PageTwo() {
           <IonTitle class="ion-text-center">Мопеды</IonTitle>
         </IonToolbar>
       </IonHeader>
+      <IonRow>
+        <IonButtons>
+          <IonCol>
+            <IonButton className='filter-madal'>Фильтр  <IonIcon icon={optionsOutline} /></IonButton>
+          </IonCol>
+        </IonButtons>
+      </IonRow>
       <IonContent class="ion-padding">
-        <Likecard/>
+        <Likecard />
       </IonContent>
     </>
   );
