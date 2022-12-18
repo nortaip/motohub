@@ -7,11 +7,12 @@ import {
     IonToolbar,
     IonTitle,
     IonItem,
-    IonCheckbox,
-    IonLabel
+    IonRadio,
+    IonLabel,
+    IonRadioGroup
 } from '@ionic/react';
 import '../components/Main.css';
-function PInformation() {
+function Language() {
     return (
         <>
             <IonHeader>
@@ -23,22 +24,26 @@ function PInformation() {
                 </IonToolbar>
             </IonHeader>
             <IonContent class="ion-padding">
-                <IonItem>
-                    <IonCheckbox slot="end"></IonCheckbox>
-                    <IonLabel className='h4-regular'>Azərbaycan</IonLabel>
-                </IonItem>
-                <IonItem>
-                    <IonCheckbox slot="end"></IonCheckbox>
-                    <IonLabel className='h4-regular'>Русский</IonLabel>
-                </IonItem>
-                <IonItem>
-                    <IonCheckbox slot="end"></IonCheckbox>
-                    <IonLabel className='h4-regular'>English</IonLabel>
-                </IonItem>
+                <IonRadioGroup value="Language">
+                    <IonItem>
+                        <IonLabel className='h4-regular'>Azərbaycan</IonLabel>
+                        <IonRadio slot="end" value="Azərbaycan"></IonRadio>
+                    </IonItem>
+
+                    <IonItem>
+                        <IonLabel className='h4-regular'>Русский</IonLabel>
+                        <IonRadio slot="end" value="Русский"></IonRadio>
+                    </IonItem>
+
+                    <IonItem>
+                        <IonLabel className='h4-regular'>English</IonLabel>
+                        <IonRadio slot="end" value="English"></IonRadio>
+                    </IonItem>
+                </IonRadioGroup>
                 <IonButton className='btn'>Save</IonButton>
             </IonContent>
         </>
     );
 }
 
-export default PInformation;
+export default Language;

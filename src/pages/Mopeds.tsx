@@ -14,6 +14,7 @@ import {
 import { optionsOutline, filterOutline } from 'ionicons/icons';
 
 import Likecard from '../components/Likecard';
+import CardLoading from '../components/CardLoading';
 
 function PageTwo() {
   return (
@@ -36,6 +37,7 @@ function PageTwo() {
       </IonRow>
       <IonContent class="ion-padding">
         <Likecard />
+        <CardLoading/>
       </IonContent>
     </>
   );

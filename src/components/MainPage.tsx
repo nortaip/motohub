@@ -10,7 +10,7 @@ import Catagory from './Catagory';
 import Card from './card';
 
 
-const Tab5: React.FC = () => {
+const Mainpage: React.FC = () => {
     return (
         <><IonPage>
             <Menu />
@@ -29,4 +29,4 @@ const Tab5: React.FC = () => {
     );
 };
 
-export default Tab5;
+export default Mainpage;

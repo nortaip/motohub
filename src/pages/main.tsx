@@ -1,15 +1,13 @@
 import {
-  IonContent,
   IonNav,
-  IonPage,
 } from '@ionic/react';
 
-import Cardtest from '../components/MainPage';
 import '../components/Main.css'
+import Mainpage from '../components/MainPage';
 
 function main() {
   return (
-    <IonNav root={() => <Cardtest />}></IonNav>
+    <IonNav root={() => <Mainpage />}></IonNav>
   );
 };
 

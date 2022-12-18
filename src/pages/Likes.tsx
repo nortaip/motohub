@@ -1,35 +1,33 @@
 import {
   IonContent,
   IonHeader,
-  IonMenuToggle,
+  IonToolbar,
   IonPage,
-  IonIcon,
+  IonButtons,
+  IonBackButton,
+  IonTitle,
   IonButton
 } from '@ionic/react';
-import Menu from '../components/Menu'
-import { menuOutline, } from 'ionicons/icons';
 import '../components/Main.css'
 import Segment from '../components/segment';
 import LikeCards from '../components/Likecard'
+
 const LIkes: React.FC = () => {
   return (
-    <IonPage>
-      <Menu />
-      <IonPage id="main-content">
-        <IonHeader className='header-menu'>
-          <IonMenuToggle className='menu-icon'>
-            <IonIcon icon={menuOutline} />
-          </IonMenuToggle>
-          <img alt='Logo' src='assets/images/logo.png' />
-        </IonHeader>
-        <IonContent className="ion-padding ">
-          <h4 className='center header-h'>Обьявления</h4>
-          <Segment/>
-          <LikeCards/>
-          <IonButton expand="block"className='btn'>Разместить бесплатно</IonButton>
-        </IonContent>
-      </IonPage>
-      
+    <IonPage id="main-content">
+      <IonHeader>
+        <IonToolbar>
+          <IonButtons slot="start">
+            <IonBackButton></IonBackButton>
+          </IonButtons>
+          <IonTitle class="ion-text-center">Обьявления</IonTitle>
+        </IonToolbar>
+      </IonHeader>
+      <IonContent className="ion-padding ">
+        <Segment />
+        <LikeCards />
+        <IonButton expand="block" className='btn'>Разместить бесплатно</IonButton>
+      </IonContent>
     </IonPage>
   );
 };
