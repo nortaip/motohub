@@ -816,16 +816,17 @@ ion-checkbox::part(container) {
   gap: 8px;
 }
 
-.swiper-pagination-bullet .swiper-pagination-bullet-active {
-  width: 65px;
+.swiper-pagination-bullet{
+  width:  100%;
   height: 4px;
   border-radius: 8px;
 }
 
 .swiper-pagination-bullet-active {
-  width: 65px;
+  width: 100%;
   height: 4px;
   background: #E5E5EA;
+  border-radius: 8px;
 }
 
 .info-moto {
@@ -944,4 +945,12 @@ ion-skeleton-text {
 .time-Load {
   width: 118px;
   height: 15px;
+}
+
+.product-img {
+  width: 100% !important;
+  height: 293px !important;
+}
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal>.swiper-pagination-bullets{
+ display: flex !important;
 }

@@ -7,17 +7,20 @@ import {
     IonContent,
     IonToolbar,
     IonIcon,
-    IonSlides,
-    IonSlide,
     IonList,
     IonButton,
-    IonItem,
-    IonLabel
+    IonSlides,
+    IonSlide
 } from '@ionic/react';
-import { heartOutline, shareSocialOutline, eyeOutline,callOutline } from 'ionicons/icons';
+import { heartOutline, shareSocialOutline, eyeOutline, callOutline } from 'ionicons/icons';
 
 
-function ProfileInfo() {
+function ProductInfo() {
+    const slideOpts = {
+        initialSlide: 1,
+        speed: 500
+      };
+      
     return (
         <>
             <IonHeader>
@@ -32,31 +35,17 @@ function ProfileInfo() {
                 </IonToolbar>
             </IonHeader>
             <IonContent class="ion-padding">
-                {/* Img side */}
+                {/* Title and price */}
                 <h4>NIU UQI Red Электроскутер, 2020 </h4>
                 <h3>3999₼ </h3>
-                <IonSlides  >
-                    <IonSlide>
-                        <img alt='moto' src='assets/images/motor.png' />
-                    </IonSlide>
-                    <IonSlide>
-                        <img alt='moto' src='assets/images/motor.png' />
-                    </IonSlide>
-                    <IonSlide>
-                        <img alt='moto' src='assets/images/motor.png' />
-                    </IonSlide>
-                    <IonSlide>
-                        <img alt='moto' src='assets/images/motor.png' />
-                    </IonSlide>
-                    <IonSlide>
-                        <img alt='moto' src='assets/images/motor.png' />
-                    </IonSlide>
-                    <IonSlide>
-                        <img alt='moto' src='assets/images/motor.png' />
-                    </IonSlide>
-                    <IonSlide>
-                        <img alt='moto' src='assets/images/motor.png' />
-                    </IonSlide>
+                {/* Img side */}
+                <IonSlides pager={true} options={slideOpts}>
+                    <IonSlide className='product-img'><img alt='moto' src='assets/images/motor.png' /></IonSlide>
+                    <IonSlide className='product-img'><img alt='moto' src='assets/images/moto.jpg' /></IonSlide>
+                    <IonSlide className='product-img'><img alt='moto' src='assets/images/image.png' /></IonSlide>
+                    <IonSlide className='product-img'><img alt='moto' src='assets/images/image.png' /></IonSlide>
+                    <IonSlide className='product-img'><img alt='moto' src='assets/images/image.png' /></IonSlide>
+                    <IonSlide className='product-img'><img alt='moto' src='assets/images/image.png' /></IonSlide>
                 </IonSlides>
                 {/* Upload infos */}
                 <div className="info-moto">
@@ -107,10 +96,10 @@ function ProfileInfo() {
                 <h4>Комментарий продавца</h4>
                 <p>Уважаемые клиенты, мотоциклом пользовался я сам, он в отличном состоянии. С этим прибором можно ездить на одном заряде по всему городу. Совету брать!</p>
                 <p className='btn-second'>Пожаловаться на обьявление</p>
-                <IonButton expand="block" className='btn-icon'><IonIcon icon={callOutline} size='large' /> Позвонить</IonButton>
+                <IonButton expand="block" className='btn-icon'><IonIcon icon={callOutline} size='large' />Позвонить</IonButton>
             </IonContent>
         </>
     );
 }
 
-export default ProfileInfo;
+export default ProductInfo;
