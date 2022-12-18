@@ -1,12 +1,12 @@
 import { IonMenu, IonPage, IonNav } from '@ionic/react';
-import User from './user'
+import UserSide from './UserSide'
 
 function Menu() {
 
     return (
         <>
             <IonMenu contentId="main-content">
-                <User/>
+                <UserSide/>
             </IonMenu>
         </>
     );
