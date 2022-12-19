@@ -1,4 +1,12 @@
 <svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        path {
+          fill: #AFAFAF;
+        }
+        @media (prefers-color-scheme: dark) {
+          path { fill: #1C1C1E; }
+        }
+      </style>
     <mask id="mask0_36_5371" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="49" height="48">
         <rect x="0.287109" width="48" height="48" fill="#1C1C1E" />
     </mask>

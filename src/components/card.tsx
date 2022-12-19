@@ -1,5 +1,5 @@
 
-import { IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent, IonIcon, IonCol, IonRow,IonNavLink } from '@ionic/react';
+import { IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent, IonIcon, IonCol, IonRow, IonNavLink } from '@ionic/react';
 import { heart } from 'ionicons/icons';
 import './Main.css';
 import ProductInfo from '../pages/ProductInfo';
@@ -11,7 +11,7 @@ function Card() {
             <h4 className='whh'> Подборка для вас</h4>
             <IonRow className='card-group'>
                 <IonNavLink routerDirection="forward" component={() => <ProductInfo />}>
-                    <IonCol class='card' >
+                    <IonCol class='card'>
                         <div className='badge'>
                             <div className="user-Sales ">Продано</div>
                             <div className="like"><IonIcon icon={heart} className='like' /></div>
@@ -19,7 +19,7 @@ function Card() {
                         <img className='img-card' alt="moto" src="assets/images/moto.jpg" />
                         <IonCardHeader className='info'>
                             <IonCardSubtitle class='subtitle'>Уже продан</IonCardSubtitle>
-                            <IonCardTitle class='Title'>Harley-Davidsouun</IonCardTitle>
+                            <IonCardTitle class='Title'>Harley-Davidson</IonCardTitle>
                             <IonCardContent class='time'>2020 г., 50 000кm</IonCardContent>
                         </IonCardHeader>
                     </IonCol>
@@ -99,7 +99,7 @@ function Card() {
                     </IonCol>
                 </IonNavLink>
             </IonRow>
-            <CardLoading/>
+            <CardLoading />
         </div>
     );
 }

@@ -2,17 +2,17 @@ import {
     IonBackButton,
     IonButtons,
     IonButton,
-    IonList,
     IonHeader,
     IonContent,
     IonToolbar,
     IonTitle,
-    IonItem,
     IonInput,
+    IonItem,
     IonLabel,
-    IonIcon
+    IonList,
+    IonIcon,
+    IonTabButton
 } from '@ionic/react';
-import '../components/Main.css';
 import { eyeOff } from 'ionicons/icons';
 
 function PInformation() {
@@ -23,18 +23,15 @@ function PInformation() {
                     <IonButtons slot="start">
                         <IonBackButton></IonBackButton>
                     </IonButtons>
-                    <IonTitle>Смена пароля</IonTitle>
+                    <IonTitle>Войти</IonTitle>
                 </IonToolbar>
             </IonHeader>
             <IonContent class="ion-padding">
                 <IonList>
                     <IonItem >
-                        <IonLabel position="stacked">Введите пароль</IonLabel>
-                        <IonInput className='input' type="password" placeholder="**********">
-                            <IonIcon slot="end" className='user-icon' icon={eyeOff} />
-                        </IonInput>
+                        <IonLabel position="stacked">Создать аккаунт</IonLabel>
+                        <IonInput className='input' type="tel" placeholder="888-888-8888"></IonInput>
                     </IonItem>
-
                     <IonItem >
                         <IonLabel position="stacked">Введите пароль</IonLabel>
                         <IonInput className='input' type="password" placeholder="**********">
@@ -42,7 +39,9 @@ function PInformation() {
                         </IonInput>
                     </IonItem>
                 </IonList>
-                <IonButton className='btn'>Save</IonButton>
+                <IonButton className='btn'>Продолжить</IonButton>
+                <IonButton color="light"className='btn'>Создать аккаунт</IonButton>
+
             </IonContent>
         </>
     );
