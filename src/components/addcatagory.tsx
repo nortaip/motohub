@@ -1,4 +1,4 @@
-import { IonGrid, IonRow, IonCard, IonCol, IonLabel, IonNavLink, } from '@ionic/react';
+import { IonGrid, IonRow, IonCard, IonCol, IonLabel } from '@ionic/react';
 import './Main.css';
 // import Mopeds from './Moped';
 function catbtn() {

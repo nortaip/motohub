@@ -1,4 +1,4 @@
-import { IonMenu, IonPage, IonNav } from '@ionic/react';
+import { IonMenu} from '@ionic/react';
 import UserSide from './UserSide'
 
 function Menu() {

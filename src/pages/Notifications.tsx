@@ -11,7 +11,7 @@ import {
     IonItemOption,
     IonItemOptions,
     IonItemSliding,
-    IonLabel
+
 } from '@ionic/react';
 import { archive, heart, trash } from 'ionicons/icons';
 import '../components/Main.css';

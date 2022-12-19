@@ -1,5 +1,4 @@
 import {
-  IonContent,
   IonHeader,
   IonMenuToggle,
   IonPage,
@@ -7,7 +6,7 @@ import {
 } from '@ionic/react';
 import Menu from '../components/Menu'
 import { menuOutline, } from 'ionicons/icons';
-import Search from '../components/SearchInput';
+import SearchInput from '../components/SearchInput';
 import '../components/Main.css'
 
 function main() {
@@ -21,10 +20,7 @@ function main() {
           </IonMenuToggle>
           <img alt='Logo' src='assets/images/logo.png' />
         </IonHeader>
-        <IonContent className="ion-padding ">
-          <h3 className='center header-h'>Поиск</h3>
-          <Search/>
-        </IonContent>
+          <SearchInput/>
       </IonPage>
     </IonPage>
   );

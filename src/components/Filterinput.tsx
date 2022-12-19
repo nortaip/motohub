@@ -9,7 +9,6 @@ function Inputs() {
   };
 
   return (
-    <>
     <IonContent className="ion-padding">
       <IonGrid>
         <IonItem className='input md'>
@@ -150,14 +149,14 @@ function Inputs() {
         </IonItem>
         <IonRow>
           <IonCol>
-          <IonItem className='input'>
-          {/* <IonLabel>Модель</IonLabel> */}
-          <IonSelect interfaceOptions={customActionSheetOptions} interface="action-sheet" placeholder="Цена, ₼">
-            <IonSelectOption value="red">Red</IonSelectOption>
-            <IonSelectOption value="green">Green</IonSelectOption>
-            <IonSelectOption value="blue">Blue</IonSelectOption>
-          </IonSelect>
-        </IonItem>
+            <IonItem className='input'>
+              {/* <IonLabel>Модель</IonLabel> */}
+              <IonSelect interfaceOptions={customActionSheetOptions} interface="action-sheet" placeholder="Цена, ₼">
+                <IonSelectOption value="red">Red</IonSelectOption>
+                <IonSelectOption value="green">Green</IonSelectOption>
+                <IonSelectOption value="blue">Blue</IonSelectOption>
+              </IonSelect>
+            </IonItem>
           </IonCol>
           <IonCol>
             <IonItem className='input'>
@@ -172,8 +171,7 @@ function Inputs() {
         </IonRow>
       </IonGrid>
       <IonButton className='btn' id='close-modal'>Применить фильтры</IonButton>
-      </IonContent>
-    </>
+    </IonContent>
   );
 }
 export default Inputs;
