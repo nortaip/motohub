@@ -11,7 +11,6 @@ import {
     IonLabel,
     IonList,
     IonIcon,
-    IonTabButton
 } from '@ionic/react';
 import { eyeOff } from 'ionicons/icons';
 
@@ -32,16 +31,15 @@ function PInformation() {
                         <IonLabel position="stacked">Введите номер телефона</IonLabel>
                         <IonInput className='input' type="tel" placeholder="888-888-8888"></IonInput>
                     </IonItem>
-                    <IonItem >
+                    <IonItem>
                         <IonLabel position="stacked">Введите пароль</IonLabel>
-                        <IonInput className='input' type="password" placeholder="**********">
+                        <IonInput className='input' type="password"aria-labelledby="ion-input-3-lbl" autocapitalize="off" autocomplete="off" autocorrect="off" name="ion-input-3" placeholder="**********"  >
                             <IonIcon slot="end" className='user-icon' icon={eyeOff} />
                         </IonInput>
                     </IonItem>
                 </IonList>
                 <IonButton className='btn'>Продолжить</IonButton>
                 <IonButton color="light"className='btn'>Создать аккаунт</IonButton>
-
             </IonContent>
         </>
     );

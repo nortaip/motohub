@@ -1,5 +1,5 @@
 
-import { IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent, IonIcon, IonCol, IonRow, IonNavLink } from '@ionic/react';
+import { IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent, IonIcon, IonCol, IonRow, IonNavLink, IonGrid } from '@ionic/react';
 import { heart } from 'ionicons/icons';
 import './Main.css';
 import ProductInfo from '../pages/ProductInfo';
@@ -7,7 +7,8 @@ import CardLoading from './CardLoading'
 
 function Card() {
     return (
-        <div className='main-contenttt'>
+
+        <IonGrid className='main-content'>
             <h4 className='whh'> Подборка для вас</h4>
             <IonRow className='card-group'>
                 <IonNavLink routerDirection="forward" component={() => <ProductInfo />}>
@@ -100,7 +101,7 @@ function Card() {
                 </IonNavLink>
             </IonRow>
             <CardLoading />
-        </div>
+        </IonGrid>
     );
 }
 export default Card;

@@ -7,7 +7,6 @@ import {
 
 function CardLoading() {
     return (
-        <>
             <IonRow className='card-group'>
                 <IonCol class='card-Load' >
                     <div className="user-Sales-Load "><IonSkeletonText animated={true} ></IonSkeletonText></div>
@@ -28,7 +27,6 @@ function CardLoading() {
                     </IonCardHeader>
                 </IonCol>
             </IonRow>
-        </>
     );
 }
 export default CardLoading;

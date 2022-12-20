@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { IonItem, IonList, IonIcon, IonSearchbar, IonModal, IonHeader, IonToolbar, IonTitle, IonButton, IonButtons, IonCol, IonGrid, IonRow, IonSelect, IonSelectOption, IonContent } from '@ionic/react';
-import { optionsOutline } from 'ionicons/icons';
+import { optionsOutline, closeOutline } from 'ionicons/icons';
 
 function Search() {
   const data = ['Amsterdam', 'Buenos Aires', 'Cairo', 'Geneva', 'Hong Kong', 'Istanbul', 'London', 'Madrid', 'New York', 'Panama City'];
@@ -42,7 +42,9 @@ function Search() {
           <IonToolbar>
             <IonTitle className='search-title'>Поиск фильтр </IonTitle>
             <IonButtons slot="end">
-              <IonButton onClick={() => dismissmodal()} className='close-modal' >Закрывать</IonButton>
+              <IonButton onClick={() => dismissmodal()} className='close-modal' >
+                <IonIcon id="open-modal" icon={closeOutline} className='icon' />
+              </IonButton>
             </IonButtons>
           </IonToolbar>
         </IonHeader>

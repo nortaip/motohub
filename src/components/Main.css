@@ -6,12 +6,14 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'TT Firs Neue';
   src: url('../../public/assets/fonts/TTFirsNeue-Bold.woff2') format('opentype');
   font-weight: bold;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'TT Firs Neue';
   src: url('../../public/assets/fonts/TTFirsNeue-Medium.woff2') format('opentype');
@@ -137,10 +139,11 @@ ion-card-header.ios {
 .sb {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   padding: 0px;
-  gap: 5px;
+  gap: 8px;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
 }
 
 .header-menu {
@@ -149,7 +152,7 @@ ion-card-header.ios {
   justify-content: space-between;
   align-items: center;
   padding: 0 16px;
-  gap: 179px;
+  /* gap: 179px; */
   flex-wrap: nowrap;
   align-content: center;
   background-color: var(--ion-color-light-red);
@@ -188,22 +191,19 @@ ion-card-header.ios {
 }
 
 .card-cat {
-  flex-direction: column;
-  align-items: center;
-  display: flex;
-  padding: 8px 8px;
-  width: 65px;
-  height: 65px;
-  order: 0;
-  flex-grow: 0;
   background: var(--ion-color-light-back);
   border: 2px solid rgba(142, 142, 147, 0.5);
-  border-radius: 12.5886px;
-  box-shadow: none;
-  flex-wrap: nowrap;
-  align-content: center;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  cursor: pointer;
+  align-items: center;
+  /* padding: 20px 20px; */
+  gap: 10px;
+  width: 100%;
+  border-radius: 13px;
+  min-width: 45px;
+  min-height: 64px;
+  flex-wrap: nowrap;
 }
 
 .svg {
@@ -235,10 +235,12 @@ path {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  /* padding: 0px; */
+  padding: 0px;
   /* padding: 0px 16px; */
   z-index: 1;
   background-color: transparent;
+  justify-content: center;
+  flex-wrap: nowrap;
 }
 
 .Crardlabel {
@@ -312,10 +314,18 @@ path {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   padding: 0px;
   gap: 21px;
   background-color: transparent;
+}
+
+.main-content-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
 }
 
 .rectangleView {
@@ -330,11 +340,12 @@ path {
 }
 
 .card-group {
-  display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   padding: 0px;
   gap: 16px;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
 
 .badge {
@@ -1008,4 +1019,18 @@ ion-modal#example-modal {
   padding: 0px;
   gap: 10px;
   flex-wrap: nowrap;
+}
+
+ion-button.img-add-btn {
+  background: #F2F2F2 !important;
+  border-radius: 13px !important;
+  border: none !important;
+  list-style: none !important;
+  width: 100% !important;
+  height: 112px !important;
+  color: var(--ion-color-light-input);
+  margin-top: 0 !important;
+  box-shadow: none !important;
+  --padding-top: 16px;
+  --padding-bottom: 16px;
 }
