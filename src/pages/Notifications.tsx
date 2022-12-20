@@ -1,7 +1,6 @@
 import {
     IonBackButton,
     IonButtons,
-    IonButton,
     IonHeader,
     IonContent,
     IonToolbar,
@@ -13,7 +12,7 @@ import {
     IonItemSliding,
 
 } from '@ionic/react';
-import { archive, heart, trash } from 'ionicons/icons';
+import { archive, trash } from 'ionicons/icons';
 import '../components/Main.css';
 
 function PageTwo() {

@@ -8,8 +8,6 @@ import Headermain from './Headermain';
 import '../components/Main.css'
 import Catagory from './Catagory';
 import Card from './card';
-import CardLoading from './CardLoading'
-
 
 const Mainpage: React.FC = () => {
     return (

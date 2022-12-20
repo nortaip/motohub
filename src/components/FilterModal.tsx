@@ -1,11 +1,10 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { IonModal, IonToolbar, IonTitle, IonLabel, IonButtons, IonContent, IonBackButton, IonChip, IonHeader, IonRow, IonCol, IonIcon } from '@ionic/react';
 import Likecard from '../components/Likecard';
 import CardLoading from '../components/CardLoading';
 import { optionsOutline, filterOutline } from 'ionicons/icons';
 
 function filterModal() {
-    const modal = useRef<HTMLIonModalElement>(null);
 
     return (
         <>

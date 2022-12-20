@@ -10,8 +10,7 @@ import {
     IonItem,
     IonLabel,
     IonList,
-    IonIcon,
-    IonTabButton
+    IonIcon
 } from '@ionic/react';
 import { eyeOff } from 'ionicons/icons';
 
@@ -41,7 +40,6 @@ function PInformation() {
                 </IonList>
                 <IonButton className='btn'>Продолжить</IonButton>
                 <IonButton color="light"className='btn'>Создать аккаунт</IonButton>
-
             </IonContent>
         </>
     );
