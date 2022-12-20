@@ -18,7 +18,7 @@ function Search() {
   function dismissmodal() {
     modal.current?.dismiss();
   }
-  const [presentingElement, setPresentingElement] = useState<HTMLElement | null>(null);
+  const [presentingElement] = useState<HTMLElement | null>(null);
 
   const customActionSheetOptions = {
     header: 'Colors',

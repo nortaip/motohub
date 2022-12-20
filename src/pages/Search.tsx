@@ -11,18 +11,16 @@ import '../components/Main.css'
 
 function main() {
   return (
-    <IonPage>
+    <IonPage id="main-content">
       <Menu />
-      <IonPage id="main-content">
         <IonHeader className='header-menu'>
           <IonMenuToggle className='menu-icon'>
             <IonIcon icon={menuOutline} />
           </IonMenuToggle>
           <img alt='Logo' src='assets/images/logo.png' />
-        </IonHeader>
+        </IonHeader> 
           <SearchInput/>
       </IonPage>
-    </IonPage>
   );
 };
 

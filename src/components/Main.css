@@ -1,5 +1,24 @@
 @import "../theme/variables.css";
 
+@font-face {
+  font-family: 'TT Firs Neue';
+  src: url('../../public/assets/fonts/TTFirsNeue-Regular.woff') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TT Firs Neue';
+  src: url('../../public/assets/fonts/TTFirsNeue-Bold.woff2') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TT Firs Neue';
+  src: url('../../public/assets/fonts/TTFirsNeue-Medium.woff2') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
 :root {
   /* fonts */
   --font-montserrat: TT Firs Neue;

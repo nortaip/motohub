@@ -6,34 +6,35 @@ import React, { Component } from 'react';
 // import { Plugins, CameraResultType } from '@capacitor/core';
 // const { Camera } = Plugins;
 
-const INITIAL_STATE = {
-  photo: '',
-};
+// const INITIAL_STATE = {
+//   photo: '',
+// };
 
 const customActionSheetOptions = {
   header: 'Colors',
   subHeader: 'Select your favorite color'
 };
+
 export class Home extends Component {
-  state: any = {};
-  props: any = {};
-  constructor(props: any) {
-    super(props);
-    this.state = { ...INITIAL_STATE };
-  }
-  takePicture() { }
+  // state: any = {};
+  // props: any = {};
+  // constructor(props: any) {
+  //   super(props);
+  //   this.state = { ...INITIAL_STATE };
+  // }
+  // takePicture() { }
 
   render() {
-    const { photo  } = this.state;
+    // const { photo  } = this.state;
     return (
 
       <>
-        <div className="img-add">
+        {/* <div className="img-add">
           <IonImg src={photo} className='add-img'></IonImg>
           <IonButton className='img-add-btn' onClick={() => this.takePicture()}>
             <IonIcon icon={addOutline} size='large' />
           </IonButton>
-        </div>
+        </div> */}
         <IonGrid>
           <IonItem className='input md'>
             {/* <IonLabel>Модель</IonLabel> */}
