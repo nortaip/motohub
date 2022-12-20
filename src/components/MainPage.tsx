@@ -12,9 +12,9 @@ import Card from './card';
 
 const Mainpage: React.FC = () => {
     return (
-        <><IonPage>
-            <Menu />
+        <>
             <IonPage id="main-content">
+                <Menu />
                 <Headermain />
                 <IonContent className="ion-padding">
                     <div className='main-content'>
@@ -24,7 +24,6 @@ const Mainpage: React.FC = () => {
                     </div>
                 </IonContent>
             </IonPage>
-        </IonPage >
         </>
     );
 };

@@ -666,7 +666,7 @@ ion-button {
   color: var(--ion-color-light-input);
   --border-radius: 13px;
   margin-top: 20px;
-  --ripple-color: deeppink;
+  --ripple-color: rgb(161, 0, 0);
   box-shadow: none !important;
   --padding-top: 16px;
   --padding-bottom: 16px;
@@ -962,4 +962,31 @@ ion-modal#example-modal {
   --height: 50%;
   --border-radius: 16px;
   --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.add-img {
+  background: #F2F2F2;
+  border-radius: 13px;
+  border: none;
+  list-style: none;
+  width: 100%;
+  height: 112px;
+}
+
+.img-add-btn {
+  background: #F2F2F2 !important;
+  border-radius: 13px !important;
+  border: none;
+  list-style: none;
+  width: 100%;
+  height: 112px;
+}
+
+.img-add {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+  flex-wrap: nowrap;
 }

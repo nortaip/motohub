@@ -13,9 +13,8 @@ import '../components/Main.css'
 
 function main() {
   return (
-    <IonPage>
+    <IonPage id="main-content">
       <Menu />
-      <IonPage id="main-content">
         <IonHeader className='header-menu'>
           <IonMenuToggle className='menu-icon'>
             <IonIcon icon={menuOutline} />
@@ -28,7 +27,6 @@ function main() {
           <IonButton expand="block"className='btn'>Разместить бесплатно</IonButton>
         </IonContent>
       </IonPage>
-    </IonPage>
   );
 };
 

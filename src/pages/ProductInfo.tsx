@@ -14,13 +14,11 @@ import {
 } from '@ionic/react';
 import { heartOutline, shareSocialOutline, eyeOutline, callOutline } from 'ionicons/icons';
 
-
 function ProductInfo() {
     const slideOpts = {
         initialSlide: 1,
         speed: 500
-      };
-      
+    };
     return (
         <>
             <IonHeader>
@@ -30,7 +28,9 @@ function ProductInfo() {
                     </IonButtons>
                     <IonButtons slot="end" className='like-'>
                         <IonIcon icon={heartOutline} size='large' />
-                        <IonIcon icon={shareSocialOutline} size='large' />
+                        
+                            <IonIcon icon={shareSocialOutline} size='large' />
+                       
                     </IonButtons>
                 </IonToolbar>
             </IonHeader>
