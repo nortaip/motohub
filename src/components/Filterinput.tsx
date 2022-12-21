@@ -9,7 +9,7 @@ function Inputs() {
   };
 
   return (
-    <IonContent className="ion-padding">
+    <>
       <IonGrid>
         <IonItem className='input md'>
           {/* <IonLabel>Модель</IonLabel> */}
@@ -171,7 +171,7 @@ function Inputs() {
         </IonRow>
       </IonGrid>
       <IonButton className='btn' id='close-modal'>Применить фильтры</IonButton>
-    </IonContent>
+    </>
   );
 }
 export default Inputs;

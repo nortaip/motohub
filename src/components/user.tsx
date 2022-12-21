@@ -1,5 +1,5 @@
-import React from 'react';
-import { IonContent, IonPage, IonItem, IonLabel, IonList, IonIcon, IonToggle, IonNavLink } from '@ionic/react';
+import React, { useState } from 'react';
+import { IonContent, IonPage, IonItem, IonLabel, IonList, IonIcon, IonToggle, IonNavLink, IonAlert, IonButton } from '@ionic/react';
 import '../components/Main.css';
 import Usercard from '../components/usercard';
 import { helpCircleOutline, helpBuoyOutline, moon, shieldOutline, documentTextOutline, chevronForwardOutline, notificationsOutline, languageOutline, personCircleOutline, lockClosedOutline, keyOutline } from 'ionicons/icons';
@@ -14,9 +14,11 @@ import Register from '../pages/Register';
 
 function Profile() {
   const toggleDarkModeHandler = () => document.body.classList.toggle('dark');
+  const [showAlert, setShowAlert] = useState(false);
   return (
     <IonPage>
       <IonContent>
+
         <div className='bg-red'></div>
         <Usercard />
         <IonList inset={true}>
@@ -117,13 +119,37 @@ function Profile() {
         {/* Components End */}
         <IonList inset={true}>
           <IonItem className='list'>
-            <IonLabel className='user-p out'><h5>Выйти из аккаунта</h5></IonLabel>
+            <IonLabel className='user-p out' onClick={() => setShowAlert(true)}>
+              <h5>Выйти из аккаунта</h5></IonLabel>
           </IonItem>
           <IonItem className='list'>
             <IonLabel className='user-p version'><h6>Версия приложения 1.0</h6></IonLabel>
           </IonItem>
         </IonList>
       </IonContent>
+      <IonAlert
+          isOpen={showAlert}
+          onDidDismiss={() => setShowAlert(false)}
+          header={'Выйти из аккаунта'}
+          message={'Are you sure you want to <strong>log out</strong>?'}
+          buttons={[
+            {
+              text: 'Cancel',
+              role: 'cancel',
+              cssClass: '#AFAFAF',
+              handler: blah => {
+                console.log('Confirm Cancel: blah');
+              }
+            },
+            {
+              text: 'Okay',
+              cssClass: 'main',
+              handler: () => {
+                console.log('Confirm Okay');
+              }
+            }
+          ]}
+        />
     </IonPage>
   );
 };

@@ -28,18 +28,16 @@ function PInformation() {
             <IonContent class="ion-padding">
                 <IonList>
                     <IonItem >
-                        <IonLabel position="stacked">Введите номер телефона</IonLabel>
+                        <IonLabel className='label-inputs' position="stacked">Введите номер телефона</IonLabel>
                         <IonInput className='input' type="tel" placeholder="888-888-8888"></IonInput>
                     </IonItem>
                     <IonItem>
-                        <IonLabel position="stacked">Введите пароль</IonLabel>
-                        <IonInput className='input' type="password"aria-labelledby="ion-input-3-lbl" autocapitalize="off" autocomplete="off" autocorrect="off" name="ion-input-3" placeholder="**********"  >
-                            <IonIcon slot="end" className='user-icon' icon={eyeOff} />
-                        </IonInput>
+                        <IonLabel className='label-inputs' position="stacked">Password input</IonLabel>
+                        <IonInput className='input' type="password" value="password"></IonInput>
                     </IonItem>
                 </IonList>
                 <IonButton className='btn'>Продолжить</IonButton>
-                <IonButton color="light"className='btn'>Создать аккаунт</IonButton>
+                <IonButton color="light" className='btn'>Создать аккаунт</IonButton>
             </IonContent>
         </>
     );

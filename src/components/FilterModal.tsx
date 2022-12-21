@@ -2,6 +2,7 @@ import React from 'react';
 import { IonModal, IonToolbar, IonTitle, IonLabel, IonButtons, IonContent, IonBackButton, IonChip, IonHeader, IonRow, IonCol, IonIcon } from '@ionic/react';
 import Likecard from '../components/Likecard';
 import CardLoading from '../components/CardLoading';
+import Filter from './Filter'
 import { optionsOutline, filterOutline } from 'ionicons/icons';
 
 function filterModal() {
@@ -34,11 +35,7 @@ function filterModal() {
                     handleBehavior="cycle"
                     id="Filter"
                 >
-                    <IonContent className="ion-padding">
-                        <div className="ion-margin-top">
-                            <IonLabel>Filter</IonLabel>
-                        </div>
-                    </IonContent>
+                            <Filter/>
                 </IonModal>
                 <IonModal
                     trigger="Sorting"

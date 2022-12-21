@@ -3,21 +3,19 @@ import { IonLabel, IonSegment, IonSegmentButton } from '@ionic/react';
 
 import '../components/Main.css'
 
-function Example() {
+function Segment() {
   return (
-    <>
-      <IonSegment value="custom">
-        <IonSegmentButton value="Все">
-          <IonLabel>Все</IonLabel>
-        </IonSegmentButton>
-        <IonSegmentButton value="Опубликованные">
-          <IonLabel>Опубликованные</IonLabel>
-        </IonSegmentButton>
-        <IonSegmentButton value="Ожидают проверки">
-          <IonLabel>Ожидают проверки</IonLabel>
-        </IonSegmentButton>
-      </IonSegment>
-    </>
+    <IonSegment onIonChange={e => console.log('Segment selected', e.detail.value)}  >
+      <IonSegmentButton value="Все" aria-selected="true">
+        Все
+      </IonSegmentButton>
+      <IonSegmentButton value="Опубликованные">
+        Опубликованные
+      </IonSegmentButton>
+      <IonSegmentButton value="Ожидают">
+        Ожидают
+      </IonSegmentButton>
+    </IonSegment>
   );
 }
-export default Example;
+export default Segment;

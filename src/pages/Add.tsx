@@ -13,8 +13,9 @@ import '../components/Main.css'
 
 function main() {
   return (
-    <IonPage id="main-content">
+    <IonPage>
       <Menu />
+      <IonPage id="main-content">
         <IonHeader className='header-menu'>
           <IonMenuToggle className='menu-icon'>
             <IonIcon icon={menuOutline} />
@@ -24,9 +25,10 @@ function main() {
         <IonContent className="ion-padding">
           <h4 className='center header-h'>Добавить Обьявление</h4>
           <Inputs />
-          <IonButton expand="block"className='btn'>Разместить бесплатно</IonButton>
+          <IonButton expand="block" className='btn'>Разместить бесплатно</IonButton>
         </IonContent>
       </IonPage>
+    </IonPage>
   );
 };
 

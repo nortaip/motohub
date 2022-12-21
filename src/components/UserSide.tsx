@@ -6,7 +6,8 @@ import {
     IonList,
     IonIcon,
     IonToggle,
-    IonNavLink
+    IonNavLink,
+    IonPage
 } from '@ionic/react';
 import '../components/Main.css';
 import { helpCircleOutline, helpBuoyOutline, moon, shieldOutline, documentTextOutline, chevronForwardOutline, notificationsOutline, languageOutline, personCircleOutline, lockClosedOutline, keyOutline } from 'ionicons/icons';
@@ -22,7 +23,6 @@ import Register from '../pages/Register';
 function Profile() {
     const toggleDarkModeHandler = () => document.body.classList.toggle('dark');
     return (
-        <>
             <IonContent>
                 <div className='bg-red'></div>
                 <div className='user-main'>
@@ -137,7 +137,6 @@ function Profile() {
                     </IonItem>
                 </IonList>
             </IonContent>
-        </>
     );
 };
 
