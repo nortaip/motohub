@@ -6,8 +6,7 @@ import {
     IonList,
     IonIcon,
     IonToggle,
-    IonNavLink,
-    IonPage
+    IonNavLink
 } from '@ionic/react';
 import '../components/Main.css';
 import { helpCircleOutline, helpBuoyOutline, moon, shieldOutline, documentTextOutline, chevronForwardOutline, notificationsOutline, languageOutline, personCircleOutline, lockClosedOutline, keyOutline } from 'ionicons/icons';

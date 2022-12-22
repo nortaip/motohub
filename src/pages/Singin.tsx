@@ -10,9 +10,7 @@ import {
     IonItem,
     IonLabel,
     IonList,
-    IonIcon,
 } from '@ionic/react';
-import { eyeOff } from 'ionicons/icons';
 
 function PInformation() {
     return (

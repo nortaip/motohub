@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { IonContent, IonPage, IonItem, IonLabel, IonList, IonIcon, IonToggle, IonNavLink, IonAlert, IonButton } from '@ionic/react';
+import { IonContent, IonPage, IonItem, IonLabel, IonList, IonIcon, IonToggle, IonNavLink, IonAlert} from '@ionic/react';
 import '../components/Main.css';
 import Usercard from '../components/usercard';
 import { helpCircleOutline, helpBuoyOutline, moon, shieldOutline, documentTextOutline, chevronForwardOutline, notificationsOutline, languageOutline, personCircleOutline, lockClosedOutline, keyOutline } from 'ionicons/icons';
