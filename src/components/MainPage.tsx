@@ -12,18 +12,16 @@ import Card from './card';
 const Mainpage: React.FC = () => {
     return (
         <>
-            <IonPage >
+            <IonPage id="main-content">
                 <Menu />
-                <IonPage id="main-content">
-                    <Headermain />
-                    <IonContent className="ion-padding">
-                        <div className='main-content'>
-                            <div className='bg-red'></div>
-                            <Catagory />
-                            <Card />
-                        </div>
-                    </IonContent>
-                </IonPage>
+                <Headermain />
+                <IonContent className="ion-padding">
+                    <div className='main-content'>
+                        <div className='bg-red'></div>
+                        <Catagory />
+                        <Card />
+                    </div>
+                </IonContent>
             </IonPage>
         </>
     );
