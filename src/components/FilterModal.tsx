@@ -1,5 +1,5 @@
 import React from 'react';
-import { IonModal, IonToolbar, IonTitle, IonLabel, IonButtons, IonContent, IonBackButton, IonChip, IonHeader, IonRow, IonCol, IonIcon } from '@ionic/react';
+import { IonModal, IonToolbar, IonTitle, IonLabel, IonButtons, IonContent, IonBackButton, IonChip, IonHeader, IonRow, IonCol, IonIcon, IonRadioGroup, IonItem, IonRadio } from '@ionic/react';
 import Likecard from '../components/Likecard';
 import CardLoading from '../components/CardLoading';
 import Filter from './Filter'
@@ -30,12 +30,12 @@ function filterModal() {
                 <CardLoading />
                 <IonModal
                     trigger="Filter"
-                    initialBreakpoint={0.25}
+                    initialBreakpoint={0.9}
                     breakpoints={[0, 0.25, 0.5, 0.75]}
                     handleBehavior="cycle"
                     id="Filter"
                 >
-                            <Filter/>
+                    <Filter />
                 </IonModal>
                 <IonModal
                     trigger="Sorting"
@@ -45,13 +45,19 @@ function filterModal() {
                     id="Sorting"
                 >
                     <IonContent className="ion-padding">
-                        <div className="ion-margin-top">
-                            <IonLabel>Sorting.</IonLabel>
-                        </div>
+                        <IonRadioGroup value="Language">
+                            <IonItem>
+                                <IonLabel className='h4-regular'>A-Z</IonLabel>
+                                <IonRadio slot="end" value="A-Z"></IonRadio>
+                            </IonItem>
+                            <IonItem>
+                                <IonLabel className='h4-regular'>Z-A</IonLabel>
+                                <IonRadio slot="end" value="Z-A"></IonRadio>
+                            </IonItem>
+                        </IonRadioGroup>
                     </IonContent>
                 </IonModal>
             </IonContent>
-
         </>
     );
 }
