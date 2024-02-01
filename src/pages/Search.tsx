@@ -6,7 +6,7 @@ import {
 } from '@ionic/react';
 import Menu from '../components/Menu'
 import { menuOutline, } from 'ionicons/icons';
-import SearchInput from '../components/SearchInput';
+import SearchC from '../components/searchinput';
 import '../components/Main.css'
 
 function main() {
@@ -19,7 +19,7 @@ function main() {
           </IonMenuToggle>
           <img alt='Logo' src='assets/images/logo.png' />
         </IonHeader> 
-          <SearchInput/>
+          <SearchC/>
       </IonPage>
   );
 };

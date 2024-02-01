@@ -340,14 +340,17 @@ path {
 }
 
 .card-group {
-  flex-direction: row;
   align-items: center;
   padding: 0px;
   gap: 16px;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  display: flex;
   justify-content: center;
 }
-
+.card {
+  flex: 0 0 46%; 
+  max-width: 100%;
+}
 .badge {
   display: flex;
   flex-direction: row;
@@ -877,7 +880,17 @@ ion-checkbox::part(container) {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
+  justify-content: space-between;
+  display: flex;
   color: var(--ion-color-light-label) !important;
+}
+.name-infos span {
+  font-family: 'TT Firs Neue';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--ion-color-light-black) !important;
 }
 
 .ppds .md {

@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import { IonItem, IonList, IonIcon, IonSearchbar, IonModal, IonHeader, IonToolbar, IonTitle, IonButton, IonButtons, IonCol, IonGrid, IonRow, IonSelect, IonSelectOption, IonContent } from '@ionic/react';
 import { optionsOutline, closeOutline } from 'ionicons/icons';
 
-function Search() {
+function SearchC() {
   const data = ['Amsterdam', 'Buenos Aires', 'Cairo', 'Geneva', 'Hong Kong', 'Istanbul', 'London', 'Madrid', 'New York', 'Panama City'];
   let [results, setResults] = useState([...data]);
 
@@ -214,4 +214,4 @@ function Search() {
 
   );
 }
-export default Search;
+export default SearchC;

@@ -6,7 +6,6 @@ import {
 import Menu from './Menu'
 import Headermain from './Headermain';
 import '../components/Main.css'
-import Catagory from './Catagory';
 import Card from './card';
 
 const Mainpage: React.FC = () => {
@@ -16,11 +15,8 @@ const Mainpage: React.FC = () => {
                 <Menu />
                 <Headermain />
                 <IonContent className="ion-padding">
-                    <div className='main-content'>
                         <div className='bg-red'></div>
-                        <Catagory />
                         <Card />
-                    </div>
                 </IonContent>
             </IonPage>
         </>

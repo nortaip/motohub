@@ -1,5 +1,5 @@
-
-import '../components/Main.css';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import {
     IonBackButton,
     IonButtons,
@@ -10,15 +10,37 @@ import {
     IonList,
     IonButton,
     IonSlides,
-    IonSlide
+    IonSlide,
 } from '@ionic/react';
-import { heartOutline, shareSocialOutline, eyeOutline, callOutline } from 'ionicons/icons';
+import { heartOutline, shareSocialOutline, eyeOutline, pencilOutline } from 'ionicons/icons';
 
-function ProductInfo() {
+interface ProductInfoProps {
+    id: number;
+    // Add other prop types as needed
+}
+
+function ProductInfo(props: ProductInfoProps) {
+    const { id } = props;
+    const [productData, setProductData] = useState<any>({});
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await axios.get(`https://senategroup.az/Data/api/Staff.php?id=${id}`);
+                setProductData(response.data);
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        };
+
+        fetchData();
+    }, [id]);
+
     const slideOpts = {
         initialSlide: 1,
-        speed: 500
+        speed: 500,
     };
+
     return (
         <>
             <IonHeader>
@@ -26,77 +48,50 @@ function ProductInfo() {
                     <IonButtons slot="start">
                         <IonBackButton></IonBackButton>
                     </IonButtons>
-                    <IonButtons slot="end" className='like-'>
-                        <IonIcon icon={heartOutline} size='large' />
-                        
-                            <IonIcon icon={shareSocialOutline} size='large' />
-                       
-                    </IonButtons>
                 </IonToolbar>
             </IonHeader>
             <IonContent class="ion-padding">
-                {/* Title and price */}
-                <h4>NIU UQI Red Электроскутер, 2020 </h4>
-                <h3>3999₼ </h3>
+                {/* Display product username if available */}
+                <h4>{productData.username} {productData.surename} {productData.dadname || ' '}</h4>
+                <h3>{productData.userid}</h3>
                 {/* Img side */}
                 <IonSlides pager={true} options={slideOpts}>
-                    <IonSlide className='product-img'><img alt='moto' src='assets/images/motor.png' /></IonSlide>
-                    <IonSlide className='product-img'><img alt='moto' src='assets/images/moto.jpg' /></IonSlide>
-                    <IonSlide className='product-img'><img alt='moto' src='assets/images/image.png' /></IonSlide>
-                    <IonSlide className='product-img'><img alt='moto' src='assets/images/image.png' /></IonSlide>
-                    <IonSlide className='product-img'><img alt='moto' src='assets/images/image.png' /></IonSlide>
-                    <IonSlide className='product-img'><img alt='moto' src='assets/images/image.png' /></IonSlide>
+                    <IonSlide className='product-img'><img alt='moto'
+                        src={`https://senategroup.az/Data/api/Staff/3x4Staff/${productData.filePP}`} /></IonSlide>
+                    <IonSlide className='product-img'><img alt='moto'
+                        src={`https://senategroup.az/Data/api/Staff/scanStaff/${productData.fileSH}`} /></IonSlide>
                 </IonSlides>
                 {/* Upload infos */}
                 <div className="info-moto">
-                    <h5 className='info-upload'>Опубликовано 28 июля, г. Баку</h5>
+                    <h5 className='info-upload'>{productData.date_post}</h5>
                     <div className="view">
-                        <IonIcon icon={eyeOutline} size='small' />
-                        <h6 className='info-upload'>2378 (154 сегодня)</h6>
+                        {/* <IonIcon icon={eyeOutline} size='small' /> */}
+                        {/* <h6 className='info-upload'>2378 (154 сегодня)</h6> */}
                     </div>
                 </div>
                 {/* Characteristics */}
-                <h4>Характеристики</h4>
+                <h4>Məlumatları</h4>
                 <div className="details">
                     <IonList lines="none" className='ppds'>
-                        <p className='name-infos'>Год выпуска</p>
-                        <p className='name-infos'>Пробег</p>
-                        <p className='name-infos'>Тип</p>
-                        <p className='name-infos'>Цвет</p>
-                        <p className='name-infos'>Двигатель</p>
-                        <p className='name-infos'>Цилиндров</p>
-                        <p className='name-infos'>Тактов</p>
-                        <p className='name-infos'>КПП</p>
-                        <p className='name-infos'>Привод</p>
-                        <p className='name-infos'>Состояние</p>
-                        <p className='name-infos'>Владельцы</p>
-                        <p className='name-infos'>ПТС</p>
-                        <p className='name-infos'>Таможня</p>
-                        <p className='name-infos'>Обмен</p>
-                        <p className='name-infos'>VIN</p>
-                    </IonList>
-                    <IonList>
-                        <p>2021</p>
-                        <p>6 810 rv</p>
-                        <p>Электроскутер</p>
-                        <p>Черный</p>
-                        <p>650 см3 / 68 л.с. / Инжектор</p>
-                        <p>2 / Рядное</p>
-                        <p>4</p>
-                        <p>6 передач</p>
-                        <p>Цепь</p>
-                        <p>Не требует ремонта</p>
-                        <p>1</p>
-                        <p>Оригинал / Электронный</p>
-                        <p>Растоможен</p>
-                        <p>Возможен</p>
-                        <p>Год выпуска</p>
+                        <p className='name-infos'>Adı <span>{productData.username || 'N/A'}</span></p>
+                        <p className='name-infos'>Soy Adı <span>{productData.surename || 'N/A'}</span></p>
+                        <p className='name-infos'>Ata Adı <span>{productData.dadname || 'N/A'}</span></p>
+                        <p className='name-infos'>Vəzifəsi <span>{productData.vezife || 'N/A'}</span></p>
+                        <p className='name-infos'>Departament <span>{productData.Departament || 'N/A'}</span></p>
+                        <p className='name-infos'>Akkreditasiya <span>{productData.Catagory || 'N/A'}</span></p>
+                        <p className='name-infos'>Fin <span>{productData.Fin || 'N/A'}</span></p>
+                        <p className='name-infos'>Telefon <span>{productData.Phone || 'N/A'}</span></p>
+                        <p className='name-infos'>Doğum tarixi <span>{productData.datebhrd || 'N/A'}</span></p>
+                        <p className='name-infos'>Vətəndaşlığı <span>{productData.Country || 'N/A'}</span></p>
+                        <p className='name-infos'>Təhsili <span>{productData.edu || 'N/A'}</span> </p>
+                        <p className='name-infos'>Yaşayış ünvanı <span>{productData.lokationLive || 'N/A'}</span> </p>
+                        <p className='name-infos'>Qeydiyyat ünvanı <span>{productData.lokatiogeyd || 'N/A'}</span></p>
+                        <p className='name-infos'>İşə qəbul tarixi <span>{productData.outdate ? productData.outdate : 'N/A'}</span></p>
+                        <p className='name-infos'>İşədən çıxma Səbəbi <span>{productData.outwhy ? productData.outwhy : 'N/A'}</span></p>
                     </IonList>
                 </div>
-                <h4>Комментарий продавца</h4>
-                <p>Уважаемые клиенты, мотоциклом пользовался я сам, он в отличном состоянии. С этим прибором можно ездить на одном заряде по всему городу. Совету брать!</p>
-                <p className='btn-second'>Пожаловаться на обьявление</p>
-                <IonButton expand="block" className='btn-icon'><IonIcon icon={callOutline} size='large' />Позвонить</IonButton>
+                <p className='btn-second'>Qeydiyatdan çıxar</p>
+                <IonButton expand="block" className='btn-icon'>Edit</IonButton>
             </IonContent>
         </>
     );
